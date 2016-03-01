@@ -1,0 +1,24 @@
+{
+  "name": "37661-pink",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Личный проект «Пинк» от HTML Academy",
+  "author": "Кирилл Прокудин",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/htmlacademy-adaptive/37661-pink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htmlacademy-adaptive/37661-pink/issues"
+  },
+  "homepage": "https://github.com/htmlacademy-adaptive/37661-pink",
+  "devDependencies": {
+    "editorconfig-tools": "0.1.1"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
