@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <a href="#" class="main-title"><h1>PINK</h1></a>
+      <div class="main-menu">
+        <ul class="main-menu__list">
+          <li>Информация</li>
+          <li>Возможности</li>
+          <li>Отзывы</li>
+          <li>Стоимость</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro__slogan">
+          <h2>Взгляните на жизнь иначе!</h2>
+        </div>
+        <article class="download">
+          <a href="#" class="download-link"></a>
+          <div class="available-platforms">
+            <a href="#" class="available-platforms__apple"><img src="" alt="apple"></a>
+            <a href="#" class="available-platforms__android"><img src="" alt="android"></a>
+            <a href="#" class="available-platforms__win"><img src="" alt="windows"></a>
+            <p class="available-platforms__text"></p>
+          </div>
+        </article>
+      </section><!--END OF INTRO -->
+      <section class="information">
+        <header class="information__header">
+          <h2>Устали от серости мегаполиса?<br>Нам есть, что Вам предложить!</h2>
+        </header>
+        <div class="information__feature">
+          <h3>Поднимает настроение</h3>
+          <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        </div>
+        <div class="information__feature">
+          <h3>Меняет мир вокруг</h3>
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="information__feature">
+          <h3>Заводит новых друзей</h3>
+          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </section><!--END OF INFORMATION -->
+      <section class="reviews">
+        <article class="users-review">
+          <p class="users-review__name">Николай Петров</p>
+          <p class="users-review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </article>
+        <article class="users-review">
+          <p class="users-review__name"></p>
+          <p class="users-review__text"></p>
+        </article>
+        <article class="users-review">
+          <p class="users-review__name"></p>
+          <p class="users-review__text"></p>
+        </article>
+        <div class="reviews__pagination"></div>
+      </section><!--END OF REVIEWS -->
+      <section class="price">
+        <table class="prices">
+          <tr>
+            <th></th>
+            <th>
+              <h3 class="prices__option-name">Стандарт</h3>
+              <p class="prices__option-cost">3,99 USD</p>
+            </th>
+            <th></th>
+          </tr>
+          <tr>
+            <td></td>
+            <td><p class="prices__option-feature">Розовый фильтр</p></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><p class="prices__option-feature">Смайлики</p></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><p class="prices__option-feature">Комментарии</p></td>
+            <td></td>
+          </tr>
+        </table>
+        <div class="price__pagination"></div>
+      </section><!--END OF PRICES -->
+      <section class="contacts">
+        <h2>Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <p>Звоните:</p>
+        <span>+7 (812) 555-66-66</span>
+        <p>Пишите:</p>
+        <span>mail@htmlacademy.ru</span>
+        <p>Приезжайте в гости:</p>
+        <span>ул. Большая Конюшенная, 19/8</span>
+        <div class="contacts__map"></div>
+      </section><!--END OF CONTACTS -->
+    </main>
   </body>
 </html>
