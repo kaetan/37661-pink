@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#" class="main-logo">PINK</a>
+      <div class="main-menu">
+        <ul class="main-menu__list">
+          <li>Главная</li>
+          <li>Фотографии</li>
+          <li>Конкурс</li>
+          <li>HTML Academy</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="competition">
+        <div class="competition__title">
+          <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
+        </div>
+        <div class="competition__description">
+          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        </div>
+        <form class="competition__form" action="echo" method="post">
+          <fieldset class="competition__fieldset competition__fieldset--white">
+            <label for="first-name"></label>
+            <input type="text" name="first-name" id="first-name" required placeholder="Введите ваше имя">
+            <label for="second-name"></label>
+            <input type="text" name="second-name" id="second-name" required placeholder="Укажите фамилию">
+            <label for="patronymic"></label>
+            <input type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="competition__fieldset competition__fieldset--gray">
+            <h3>Ваши безбашенные достижения в путешествии</h3>
+            <input type="checkbox" name="selfie" id="selfie" checked>
+            <label for="selfie">Сделал селфи с акулой</label>
+            <input type="checkbox" name="burned" id="burned" checked>
+            <label for="burned">Обгорел на пляже</label>
+            <input type="checkbox" name="chuck" id="chuck">
+            <label for="chuck">Видел Чака Норриса</label>
+            <input type="checkbox" name="souvenirs" id="souvenirs">
+            <label for="souvenirs">Накупил сувениров</label>
+            <input type="checkbox" name="tower" id="tower" checked>
+            <label for="tower">Удержал башню</label>
+            <input type="checkbox" name="mayhem" id="mayhem">
+            <label for="mayhem">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="competition__fieldset competition__fieldset--white">
+            <label for="phone-number">Номер телефончика</label>
+            <input type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+            <label for="email">Адресок почты</label>
+            <input type="email" name="email" id="email" required placeholder="E-mail, пожалуйста">
+          </fieldset>
+          <fieldset class="competition__fieldset competition__fieldset--gray">
+            <h3>С каким приложением путешествовали?</h3>
+            <input type="radio" name="ios" id="ios" checked>
+            <label for="ios">Pink для iOS</label>
+            <input type="radio" name="android" id="android">
+            <label for="android">Pink на Android</label>
+            <input type="radio" name="win" id="win">
+            <label for="win">Windows Phone</label>
+          </fieldset>
+          <fieldset class="competition__fieldset competition__fieldset--white">
+            <h3>Опишите свои эмоции</h3>
+            <textarea name="comment" id="comment" cols="30" rows="10" required placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <input type="submit" value="Отправить форму">
+            <p><span>*</span> — обязательные поля</p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="glasses-logo"></div>
+      <ul class="socials">
+        <li><a href="#" class="socials__twitter"></a></li>
+        <li><a href="#" class="socials__facebook"></a></li>
+        <li><a href="#" class="socials__youtube"></a></li>
+      </ul>
+      <div class="copyright">
+        <p>Разработано</p>
+      </div>
+    </footer>
+  </body>
+</html>
