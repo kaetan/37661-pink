@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <a href="#" class="main-logo">PINK</a>
       <div class="main-menu">
         <ul class="main-menu__list">
@@ -17,7 +18,7 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main class="container">
       <section class="competition">
         <div class="competition__title">
           <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
@@ -27,74 +28,74 @@
         </div>
         <form class="competition__form" action="echo" method="post">
           <fieldset class="competition__fieldset competition__fieldset--white">
-            <div>
+            <div class="competition__user-name">
               <label for="first-name"></label>
               <input type="text" name="first-name" id="first-name" required placeholder="Введите ваше имя">
             </div>
-            <div>
+            <div class="competition__user-second-name">
               <label for="second-name"></label>
               <input type="text" name="second-name" id="second-name" required placeholder="Укажите фамилию">
             </div>
-            <div>
+            <div class="competition__user-patronymic">
               <label for="patronymic"></label>
               <input type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
           <fieldset class="competition__fieldset competition__fieldset--gray">
             <h3>Ваши безбашенные достижения в путешествии</h3>
-            <div>
+            <div class="competition__achieve-selfie">
               <input type="checkbox" name="selfie" id="selfie" checked>
               <label for="selfie">Сделал селфи с акулой</label>
             </div>
-            <div>
+            <div class="competition__achieve-burned">
               <input type="checkbox" name="burned" id="burned" checked>
               <label for="burned">Обгорел на пляже</label>
             </div>
-            <div>
+            <div class="competition__achieve-chuck">
               <input type="checkbox" name="chuck" id="chuck">
               <label for="chuck">Видел Чака Норриса</label>
             </div>
-            <div>
+            <div class="competition__achieve-souvs">
               <input type="checkbox" name="souvenirs" id="souvenirs">
               <label for="souvenirs">Накупил сувениров</label>
             </div>
-            <div>
+            <div class="competition__achieve-tower">
               <input type="checkbox" name="tower" id="tower" checked>
               <label for="tower">Удержал башню</label>
             </div>
-            <div>
+            <div class="competition__achieve-mayhem">
               <input type="checkbox" name="mayhem" id="mayhem">
               <label for="mayhem">Разгромил отель</label>
             </div>
           </fieldset>
           <fieldset class="competition__fieldset competition__fieldset--white">
-            <div>
+            <div class="competition__user-phone">
               <label for="phone-number">Номер телефончика</label>
               <input type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
             </div>
-            <div>
+            <div class="competition__user-email">
               <label for="email">Адресок почты</label>
               <input type="email" name="email" id="email" required placeholder="E-mail, пожалуйста">
             </div>
           </fieldset>
           <fieldset class="competition__fieldset competition__fieldset--gray">
             <h3>С каким приложением путешествовали?</h3>
-            <div>
+            <div class="competition__device-ios">
               <input type="radio" name="ios" id="ios" checked>
               <label for="ios">Pink для iOS</label>
             </div>
-            <div>
+            <div class="competition__device-android">
               <input type="radio" name="android" id="android">
               <label for="android">Pink на Android</label>
             </div>
-            <div>
+            <div class="competition__device-win">
               <input type="radio" name="win" id="win">
               <label for="win">Windows Phone</label>
             </div>
           </fieldset>
           <fieldset class="competition__fieldset competition__fieldset--white">
             <h3>Опишите свои эмоции</h3>
-            <div>
+            <div class="competition__user-comment">
               <textarea name="comment" id="comment" cols="30" rows="10" required placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               <input type="submit" value="Отправить форму">
             </div>
@@ -103,7 +104,7 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="glasses-logo"></div>
       <ul class="socials">
         <li><a href="#" class="socials__twitter"></a></li>

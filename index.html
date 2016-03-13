@@ -3,11 +3,13 @@
   <head>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="main-header">
-      <a href="#" class="main-logo">PINK</a>
+    <header class="main-header container ">
+      <a href="#" class="main-header__logo"><img src="/img/logo-pink-white-mobile.svg" alt="PINK"></a>
+      <a href="#" class="main-header__menu-btn"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
       <div class="main-menu">
         <ul class="main-menu__list">
           <li><a href="#">Информация</a></li>
@@ -17,18 +19,18 @@
         </ul>
       </div>
     </header>
-    <main>
-      <section class="intro">
-        <div class="intro__slogan">
+    <main class="container">
+      <section class="index-intro">
+        <div class="index-intro__slogan">
           <h1>Взгляните на жизнь иначе!</h1>
         </div>
         <article class="download">
-          <a href="#" class="download-link"></a>
+          <a href="#" class="download-link">Скачать приложение</a>
           <div class="available-platforms">
             <a href="#" class="available-platforms__apple"><img src="" alt="apple"></a>
             <a href="#" class="available-platforms__android"><img src="" alt="android"></a>
             <a href="#" class="available-platforms__win"><img src="" alt="windows"></a>
-            <p class="available-platforms__text"></p>
+            <p class="available-platforms__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </article>
       </section><!--END OF INTRO -->
@@ -64,56 +66,74 @@
         </article>
         <div class="reviews__pagination">
           <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li class="reviews__active-page"><a href="#">1</a></li>
+            <li><a href="#"></a>2</li>
+            <li><a href="#"></a>3</li>
           </ul>
         </div>
       </section><!--END OF REVIEWS -->
       <section class="price">
-        <table class="prices">
+        <table class="prices-table">
           <tr>
             <th></th>
             <th>
-              <h3 class="prices__option-name">Стандарт</h3>
-              <p class="prices__option-cost">3,99 USD</p>
+              <h3 class="prices-table__option-name">Стандарт</h3>
+              <p class="prices-table__option-cost">3,99 USD</p>
             </th>
             <th></th>
           </tr>
           <tr>
             <td></td>
-            <td><p class="prices__option-feature">Розовый фильтр</p></td>
+            <td><p class="prices-table__option-feature">Розовый фильтр</p></td>
             <td></td>
           </tr>
           <tr>
             <td></td>
-            <td><p class="prices__option-feature">Смайлики</p></td>
+            <td><p class="prices-table__option-feature">Смайлики</p></td>
             <td></td>
           </tr>
           <tr>
             <td></td>
-            <td><p class="prices__option-feature">Комментарии</p></td>
+            <td><p class="prices-table__option-feature">Комментарии</p></td>
             <td></td>
           </tr>
         </table>
         <div class="price__pagination">
           <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#"></a>1</li>
+            <li class="price__active-page"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
           </ul>
         </div>
       </section><!--END OF PRICES -->
       <section class="contacts">
         <h2>Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <p>Звоните:</p>
-        <span>+7 (812) 555-66-66</span>
-        <p>Пишите:</p>
-        <span>mail@htmlacademy.ru</span>
-        <p>Приезжайте в гости:</p>
-        <span>ул. Большая Конюшенная, 19/8</span>
+        <div class="contacts__element">
+          <p>Звоните:</p>
+          <span>+7 (812) 555-66-66</span>
+        </div>
+        <div class="contacts__element">
+          <p>Пишите:</p>
+          <span>mail@htmlacademy.ru</span>
+        </div>
+        <div class="contacts__element">
+          <p>Приезжайте в гости:</p>
+          <span>ул. Большая Конюшенная, 19/8</span>
+        </div>
         <div class="contacts__map"></div>
       </section><!--END OF CONTACTS -->
     </main>
+    <footer class="main-footer main-footer--index container">
+      <div class="glasses-logo"></div>
+      <ul class="socials">
+        <li><a href="#" class="socials__twitter"></a></li>
+        <li><a href="#" class="socials__facebook"></a></li>
+        <li><a href="#" class="socials__youtube"></a></li>
+      </ul>
+      <div class="copyright">
+        <p>Разработано</p>
+        <a href="htmlacademy.ru"><img src="#" alt="HTML Academy"></a>
+      </div>
+    </footer>
   </body>
 </html>
