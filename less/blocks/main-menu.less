@@ -1,3 +1,33 @@
 .main-menu {
+  position: relative;
   display: none;
+  z-index: 10;
+  margin-top: 70px;
+  width: 100%;
+}
+.main-menu--opened {
+  position: absolute;
+  top: 4px;
+  display: block;
+}
+.main-menu__list {
+  list-style: none;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+.main-menu__list a {
+  display: block;
+  padding: 15px 13px;
+  
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  .open-sans-bold;
+
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000001;
 }

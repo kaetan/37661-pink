@@ -1,0 +1,41 @@
+@mobile-widths-only: ~"(max-width: 699px)";
+@tablet-widths: ~"(min-width: 700px)";
+@desktop-widths: ~"(min-width: 1200px)";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #283645;
+  font-style: normal;
+  text-align: center;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+  
+  @media @tablet-widths {
+    width: 620px;
+  }
+  @media @desktop-widths {
+    width: 940px;
+  }
+}
+.m-p-zero {
+  margin: 0;
+  padding: 0;
+}
+main {
+  .container;
+}
