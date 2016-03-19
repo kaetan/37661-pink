@@ -7,49 +7,55 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="main-header container ">
-      <a href="#" class="main-header__logo"><img src="/img/logo-pink-white-mobile.svg" alt="PINK"></a>
-      <a href="#" class="main-header__menu-btn"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
-      <div class="main-menu">
-        <ul class="main-menu__list">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Возможности</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Стоимость</a></li>
-        </ul>
+    <header class="main-header">
+      <div class="main-header__top-menu main-header__top-menu--opene"><!--add "d" for opened-->
+        <a href="#" class="main-header__logo"><img src="/img/logo-pink-white-mobile.svg" alt="PINK"></a>
+        <a href="#" class="main-header__menu-btn"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
+      </div>
+      <div class="main-menu main-menu--opene"><!--add "d" for opened-->
+          <ul class="main-menu__list">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Возможности</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Стоимость</a></li>
+          </ul>
       </div>
     </header>
-    <main class="container">
+    <main>
       <section class="index-intro">
-        <div class="index-intro__slogan">
-          <h1>Взгляните на жизнь иначе!</h1>
+        <div class="index-intro__bg">
+          <h1>Взгляните на жизнь<br> иначе!</h1>
         </div>
         <article class="download">
           <a href="#" class="download-link">Скачать приложение</a>
           <div class="available-platforms">
-            <a href="#" class="available-platforms__apple"><img src="" alt="apple"></a>
-            <a href="#" class="available-platforms__android"><img src="" alt="android"></a>
-            <a href="#" class="available-platforms__win"><img src="" alt="windows"></a>
-            <p class="available-platforms__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <a href="#" class="available-platforms__apple"><img src="/img/logo-apple.svg" alt="apple"></a>
+            <a href="#" class="available-platforms__android"><img src="/img/logo-android.svg" alt="android"></a>
+            <a href="#" class="available-platforms__win"><img src="/img/logo-microsoft.svg" alt="windows"></a>
+            <p class="available-platforms__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
           </div>
         </article>
       </section><!--END OF INTRO -->
       <section class="information">
         <header class="information__header">
-          <h2>Устали от серости мегаполиса?<br>Нам есть, что Вам предложить!</h2>
+          <h2>Устали от серости мегаполиса?</h2>
+          <h2>Нам есть, что вам предложить!</h2>
         </header>
-        <div class="information__feature">
-          <h3>Поднимает настроение</h3>
-          <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        <div class="information__features-list">
+          <div class="information__feature">
+            <h3>Поднимает настроение</h3>
+            <p>Приложение позволит вам победить осеннюю хандру и деперессию<br> буквально в несколько кликов!</p>
+          </div>
+          <div class="information__feature">
+            <h3>Меняет мир вокруг</h3>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью,<br> чтобы усилить эффект</p>
+          </div>
+          <div class="information__feature">
+            <h3>Заводит новых друзей</h3>
+            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите<br> новых</p>
+          </div>
         </div>
-        <div class="information__feature">
-          <h3>Меняет мир вокруг</h3>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="information__feature">
-          <h3>Заводит новых друзей</h3>
-          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-        </div>
+        <!--<img src="/img/iphone-screen-mobile.png" alt="Всем привет!" class="information__picture" width="157" height="320">-->
       </section><!--END OF INFORMATION -->
       <section class="reviews">
         <article class="users-review">
@@ -123,7 +129,7 @@
         <div class="contacts__map"></div>
       </section><!--END OF CONTACTS -->
     </main>
-    <footer class="main-footer main-footer--index container">
+    <footer class="main-footer main-footer--index">
       <div class="glasses-logo"></div>
       <ul class="socials">
         <li><a href="#" class="socials__twitter"></a></li>
