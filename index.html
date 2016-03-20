@@ -60,7 +60,7 @@
       <section class="reviews">
         <article class="users-review">
           <p class="users-review__name">Николай Петров</p>
-          <p class="users-review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <p class="users-review__text">«Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br> привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной<br> фотографии!»</p>
         </article>
         <article class="users-review">
           <p class="users-review__name"></p>
@@ -72,43 +72,49 @@
         </article>
         <div class="reviews__pagination">
           <ul>
-            <li class="reviews__active-page"><a href="#">1</a></li>
-            <li><a href="#"></a>2</li>
-            <li><a href="#"></a>3</li>
+            <li class="reviews__active-page"><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
           </ul>
         </div>
       </section><!--END OF REVIEWS -->
       <section class="price">
         <table class="prices-table">
-          <tr>
-            <th></th>
+          <tr class="prices-table__row">
             <th>
+              <h3 class="prices-table__option-name">База</h3>
+              <p class="prices-table__option-cost">1,99 USD</p>
+            </th>
+            <th class="prices-table__hit">
               <h3 class="prices-table__option-name">Стандарт</h3>
               <p class="prices-table__option-cost">3,99 USD</p>
             </th>
-            <th></th>
+            <th>
+              <h3 class="prices-table__option-name">Анлим</h3>
+              <p class="prices-table__option-cost">9,99 USD</p>
+            </th>
           </tr>
-          <tr>
-            <td></td>
-            <td><p class="prices-table__option-feature">Розовый фильтр</p></td>
-            <td></td>
+          <tr class="prices-table__row">
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Розовый фильтр</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Розовый фильтр</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Розовый фильтр</p></td>
           </tr>
-          <tr>
-            <td></td>
-            <td><p class="prices-table__option-feature">Смайлики</p></td>
-            <td></td>
+          <tr class="prices-table__row">
+            <td class="prices-table__option-feature prices-table__option-feature--no"><p>Смайлики</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Смайлики</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Смайлики</p></td>
           </tr>
-          <tr>
-            <td></td>
-            <td><p class="prices-table__option-feature">Комментарии</p></td>
-            <td></td>
+          <tr class="prices-table__row">
+            <td class="prices-table__option-feature prices-table__option-feature--no"><p>Комментарии</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--no"><p>Комментарии</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Комментарии</p></td>
           </tr>
         </table>
         <div class="price__pagination">
           <ul>
-            <li><a href="#"></a>1</li>
-            <li class="price__active-page"><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
+            <li><a href="#"></a></li>
+            <li class="price__active-page"><a href="#"></a></li>
+            <li><a href="#"></a></li>
           </ul>
         </div>
       </section><!--END OF PRICES -->
@@ -124,9 +130,11 @@
         </div>
         <div class="contacts__element">
           <p>Приезжайте в гости:</p>
-          <span>ул. Большая Конюшенная, 19/8</span>
+          <span>ул. Большая<br> Конюшенная, 19/8</span>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5916545514374!2d30.321935313194775!3d59.93891779147732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1458458898683" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </section><!--END OF CONTACTS -->
     </main>
     <footer class="main-footer main-footer--index">
