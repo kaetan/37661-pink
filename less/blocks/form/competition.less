@@ -1,6 +1,44 @@
-.competition__fieldset--white {
+.competition {
+}
+.competition__title {
+  position: relative;
+  margin-top: -4px;
+  padding-top: 99px;
+  background: url(../../../img/bg-back-mobile.jpg) center top no-repeat;
+  background-color: #1d2631;
+  color: #ffffff;
+}
+.competition__title h1 {
+  margin: 0;
+  padding-bottom: 53px;
+  font-size: 24px;
+  line-height: 30px;
+  .open-sans-light;
+}
+.competition__description {
+  padding-top: 45px;
+  padding-bottom: 5px;
+}
+.competition__description p {
+  .open-sans-normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+.competition__description span {
+  display: none;
+}
+.competition form {
+  text-align: left;
+  /*flex-direction: column;
+  display: flex;*/
+}
+.competition fieldset {
+  border: none;
+}
+.competition fieldset[class$="--white"] {
   background-color: #ffffff;
 }
-.competition__fieldset--gray {
+.competition fieldset[class$="--gray"] {
   background-color: #f2f2f2;
 }
