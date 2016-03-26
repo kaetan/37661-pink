@@ -30,7 +30,7 @@
           <p>Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
         </div>
         <form action="echo" method="post">
-          <fieldset class="input-text input-text--white">
+          <div class="input-text input-text--white">
             <div class="input-text__unit">
               <label for="first-name">Имя:</label>
               <input type="text" name="first-name" id="first-name" required placeholder="Введите ваше имя">
@@ -43,8 +43,8 @@
               <label for="patronymic">Отчество:</label>
               <input type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже">
             </div>
-          </fieldset>
-          <fieldset class="input-checkbox input-checkbox--gray">
+          </div>
+          <div class="input-checkbox input-checkbox--gray">
             <h3>Ваши безбашенные<br> достижения в путешествии</h3>
             <div class="input-checkbox__unit">
               <input type="checkbox" name="selfie" id="selfie" checked>
@@ -70,8 +70,8 @@
               <input type="checkbox" name="mayhem" id="mayhem">
               <label for="mayhem">Разгромил отель</label>
             </div>
-          </fieldset>
-          <fieldset class="input-text input-text--white input-text--pbot54">
+          </div>
+          <div class="input-text input-text--white input-text--pbot54">
             <div class="input-text__unit">
               <label for="phone-number">Номер телефончика</label>
               <input type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
@@ -80,119 +80,43 @@
               <label for="email">Адресок почты</label>
               <input type="email" name="email" id="email" required placeholder="E-mail, пожалуйста">
             </div>
-          </fieldset>
-          <fieldset class="input-radio input-radio--gray">
-            <h3>С каким приложением путешествовали?</h3>
+          </div>
+          <div class="input-radio input-radio--gray">
+            <h3>С каким приложением<br> путешествовали?</h3>
             <div class="input-radio__unit">
-              <input type="radio" name="ios" id="ios" checked>
+              <input type="radio" name="radio" id="ios" checked>
               <label for="ios">Pink для iOS</label>
             </div>
             <div class="input-radio__unit">
-              <input type="radio" name="android" id="android">
+              <input type="radio" name="radio" id="android">
               <label for="android">Pink на Android</label>
             </div>
             <div class="input-radio__unit">
-              <input type="radio" name="win" id="win">
+              <input type="radio" name="radio" id="win">
               <label for="win">Windows Phone</label>
             </div>
-          </fieldset>
-          <fieldset class="input-textarea input-textarea--white">
+          </div>
+          <div class="input-textarea input-textarea--white">
             <h3>Опишите свои эмоции</h3>
             <div class="input-textarea__unit">
-              <textarea name="comment" id="comment" cols="30" rows="10" required placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea name="comment" id="comment" required placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               <input type="submit" value="Отправить форму">
             </div>
-            <p><span>*</span> — обязательные поля</p>
-          </fieldset>
+            <p class="input-textarea__required"><span>*</span> — обязательные поля</p>
+          </div>
         </form>
-        <!--<form class="competition__form" action="echo" method="post">
-          <fieldset class="competition__fieldset competition__fieldset--white">
-            <div class="competition__user-name">
-              <label for="first-name">Имя:</label>
-              <input type="text" name="first-name" id="first-name" required placeholder="Введите ваше имя">
-            </div>
-            <div class="competition__user-second-name">
-              <label for="second-name">Фамилия:</label>
-              <input type="text" name="second-name" id="second-name" required placeholder="Укажите фамилию">
-            </div>
-            <div class="competition__user-patronymic">
-              <label for="patronymic">Отчество:</label>
-              <input type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже">
-            </div>
-          </fieldset>
-          <fieldset class="competition__fieldset competition__fieldset--gray">
-            <h3>Ваши безбашенные достижения в путешествии</h3>
-            <div class="competition__achieve-selfie">
-              <input type="checkbox" name="selfie" id="selfie" checked>
-              <label for="selfie">Сделал селфи с акулой</label>
-            </div>
-            <div class="competition__achieve-burned">
-              <input type="checkbox" name="burned" id="burned" checked>
-              <label for="burned">Обгорел на пляже</label>
-            </div>
-            <div class="competition__achieve-chuck">
-              <input type="checkbox" name="chuck" id="chuck">
-              <label for="chuck">Видел Чака Норриса</label>
-            </div>
-            <div class="competition__achieve-souvs">
-              <input type="checkbox" name="souvenirs" id="souvenirs">
-              <label for="souvenirs">Накупил сувениров</label>
-            </div>
-            <div class="competition__achieve-tower">
-              <input type="checkbox" name="tower" id="tower" checked>
-              <label for="tower">Удержал башню</label>
-            </div>
-            <div class="competition__achieve-mayhem">
-              <input type="checkbox" name="mayhem" id="mayhem">
-              <label for="mayhem">Разгромил отель</label>
-            </div>
-          </fieldset>
-          <fieldset class="competition__fieldset competition__fieldset--white">
-            <div class="competition__user-phone">
-              <label for="phone-number">Номер телефончика</label>
-              <input type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="competition__user-email">
-              <label for="email">Адресок почты</label>
-              <input type="email" name="email" id="email" required placeholder="E-mail, пожалуйста">
-            </div>
-          </fieldset>
-          <fieldset class="competition__fieldset competition__fieldset--gray">
-            <h3>С каким приложением путешествовали?</h3>
-            <div class="competition__device-ios">
-              <input type="radio" name="ios" id="ios" checked>
-              <label for="ios">Pink для iOS</label>
-            </div>
-            <div class="competition__device-android">
-              <input type="radio" name="android" id="android">
-              <label for="android">Pink на Android</label>
-            </div>
-            <div class="competition__device-win">
-              <input type="radio" name="win" id="win">
-              <label for="win">Windows Phone</label>
-            </div>
-          </fieldset>
-          <fieldset class="competition__fieldset competition__fieldset--white">
-            <h3>Опишите свои эмоции</h3>
-            <div class="competition__user-comment">
-              <textarea name="comment" id="comment" cols="30" rows="10" required placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              <input type="submit" value="Отправить форму">
-            </div>
-            <p><span>*</span> — обязательные поля</p>
-          </fieldset>
-        </form>-->
       </section>
     </main>
     <footer class="main-footer container">
-      <div class="glasses-logo"></div>
+      <div class="main-footer__glasses-logo"><a href=""><img src="/img/logo-pink-blue-mobile.svg" alt="Pink"></a></div>
       <ul class="socials">
         <li><a href="#" class="socials__twitter"></a></li>
         <li><a href="#" class="socials__facebook"></a></li>
         <li><a href="#" class="socials__youtube"></a></li>
       </ul>
-      <div class="copyright">
+      <div class="main-footer__copyright">
         <p>Разработано</p>
-        <a href="htmlacademy.ru"><img src="#" alt="HTML Academy"></a>
+        <a href="htmlacademy.ru"><img src="/img/logo-htmlacademy.svg" alt=""></a>
       </div>
     </footer>
   </body>
