@@ -1,0 +1,67 @@
+.submit-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 29px;
+  background-color: #f2f2f2;
+}
+.submit-photo__tools-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 90px;
+  width: 280px;
+  vertical-align: middle;
+  font-size: 0;
+}
+.submit-photo__tool {
+  display: flex;
+  flex-direction: column;
+}
+.submit-photo__tool--active input{
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.submit-photo__tool--inactive input{
+  display: none;
+}
+.submit-photo__tool input{
+  width: 240px;
+}
+.submit-photo__tool a {
+  display: inline-block;
+  margin-right: 20px;
+}
+.submit-photo__tool:last-child a {
+  margin-right: 0;
+}
+.submit-photo__tool img {
+  display: block;
+}
+.submit-photo__btn {
+  width: 100%;
+  margin-bottom: 12px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  .open-sans-bold;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #f2f2f2;
+  border: 3px solid #d22856;
+  border-radius: 30px;
+}
+.submit-photo__btn--submit {
+  color: #d22856;
+  border: 3px solid #d22856;
+  border-radius: 30px;
+}
+.submit-photo__btn--reset {
+  color: #dddfe0;
+  border: 3px solid #dddfe0;
+  border-radius: 30px;
+}

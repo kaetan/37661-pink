@@ -23,10 +23,10 @@
     </header>
     <main>
       <section class="competition">
-        <div class="competition__title">
+        <div class="competition__page-title">
           <h1>Конкурс на самое безбашеное<br> путешествие с Пинк</h1>
         </div>
-        <div class="competition__description">
+        <div class="competition__page-description">
           <p>Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
         </div>
         <form action="echo" method="post">
@@ -100,14 +100,16 @@
             <h3>Опишите свои эмоции</h3>
             <div class="input-textarea__unit">
               <textarea name="comment" id="comment" required placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              <input type="submit" value="Отправить форму">
             </div>
-            <p class="input-textarea__required"><span>*</span> — обязательные поля</p>
+          </div>
+          <div class="competition__submit">
+            <input type="submit" value="Отправить форму">
+            <p><span>*</span> — обязательные поля</p>
           </div>
         </form>
       </section>
     </main>
-    <footer class="main-footer container">
+    <footer class="main-footer">
       <div class="main-footer__glasses-logo"><a href=""><img src="/img/logo-pink-blue-mobile.svg" alt="Pink"></a></div>
       <ul class="socials">
         <li><a href="#" class="socials__twitter"></a></li>
