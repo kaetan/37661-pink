@@ -1,0 +1,68 @@
+.information {
+  position: relative;
+  background-color: #f2f2f2;
+  padding-bottom: 318px;
+}/*
+.information::after {
+  content: url(../../../img/iphone-screen-mobile.png);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  width: 157px;
+  height: 320px;
+}*/
+.information::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  width: 157px;
+  height: 320px;
+  background: url(../../../img/iphone-screen-mobile.png) center 42px no-repeat;
+}
+.information__header {
+  position: relative;
+  padding-top: 39px;
+  padding-bottom: 32px;
+  background-color: #ffffff;
+}
+.information__header h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+  
+  font-size: 24px;
+  line-height: 30px;
+  .open-sans-light;
+}
+.information__header h2:last-of-type {
+  margin-bottom: 0px;
+}
+
+.information__features-list {
+  padding-top: 81px;
+}
+.information__feature h3 {
+  .m-p-zero;
+  margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  .open-sans-bold;
+  
+}
+.information__feature p {
+  .m-p-zero;
+  margin-bottom: 31px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  .open-sans-normal;
+}
+.information__feature:last-child p {
+  margin-bottom: 0px;
+}

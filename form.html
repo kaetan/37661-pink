@@ -2,117 +2,123 @@
 <html lang="ru">
   <head>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="main-header">
-      <a href="#" class="main-logo">PINK</a>
-      <div class="main-menu">
-        <ul class="main-menu__list">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Фотографии</a></li>
-          <li><a href="#">Конкурс</a></li>
-          <li><a href="#">HTML Academy</a></li>
-        </ul>
+      <div class="main-header__top-menu main-header__top-menu--opene"><!--add "d" for opened-->
+        <a href="#" class="main-header__logo"><img src="/img/logo-pink-white-mobile.svg" alt="PINK"></a>
+        <a href="#" class="main-header__menu-btn"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
+      </div>
+      <div class="main-menu main-menu--opene"><!--add "d" for opened-->
+          <ul class="main-menu__list">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Возможности</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Стоимость</a></li>
+          </ul>
       </div>
     </header>
     <main>
       <section class="competition">
-        <div class="competition__title">
-          <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
+        <div class="competition__page-title">
+          <h1>Конкурс на самое безбашеное<br> путешествие с Пинк</h1>
         </div>
-        <div class="competition__description">
-          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <div class="competition__page-description">
+          <p>Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
         </div>
-        <form class="competition__form" action="echo" method="post">
-          <fieldset class="competition__fieldset competition__fieldset--white">
-            <div>
-              <label for="first-name"></label>
+        <form action="echo" method="post">
+          <div class="input-text input-text--white">
+            <div class="input-text__unit">
+              <label for="first-name">Имя:</label>
               <input type="text" name="first-name" id="first-name" required placeholder="Введите ваше имя">
             </div>
-            <div>
-              <label for="second-name"></label>
+            <div class="input-text__unit">
+              <label for="second-name">Фамилия:</label>
               <input type="text" name="second-name" id="second-name" required placeholder="Укажите фамилию">
             </div>
-            <div>
-              <label for="patronymic"></label>
+            <div class="input-text__unit">
+              <label for="patronymic">Отчество:</label>
               <input type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже">
             </div>
-          </fieldset>
-          <fieldset class="competition__fieldset competition__fieldset--gray">
-            <h3>Ваши безбашенные достижения в путешествии</h3>
-            <div>
+          </div>
+          <div class="input-checkbox input-checkbox--gray">
+            <h3>Ваши безбашенные<br> достижения в путешествии</h3>
+            <div class="input-checkbox__unit">
               <input type="checkbox" name="selfie" id="selfie" checked>
               <label for="selfie">Сделал селфи с акулой</label>
             </div>
-            <div>
+            <div class="input-checkbox__unit">
               <input type="checkbox" name="burned" id="burned" checked>
               <label for="burned">Обгорел на пляже</label>
             </div>
-            <div>
+            <div class="input-checkbox__unit">
               <input type="checkbox" name="chuck" id="chuck">
               <label for="chuck">Видел Чака Норриса</label>
             </div>
-            <div>
+            <div class="input-checkbox__unit">
               <input type="checkbox" name="souvenirs" id="souvenirs">
               <label for="souvenirs">Накупил сувениров</label>
             </div>
-            <div>
+            <div class="input-checkbox__unit">
               <input type="checkbox" name="tower" id="tower" checked>
               <label for="tower">Удержал башню</label>
             </div>
-            <div>
+            <div class="input-checkbox__unit">
               <input type="checkbox" name="mayhem" id="mayhem">
               <label for="mayhem">Разгромил отель</label>
             </div>
-          </fieldset>
-          <fieldset class="competition__fieldset competition__fieldset--white">
-            <div>
+          </div>
+          <div class="input-text input-text--white input-text--pbot54">
+            <div class="input-text__unit">
               <label for="phone-number">Номер телефончика</label>
               <input type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
             </div>
-            <div>
+            <div class="input-text__unit">
               <label for="email">Адресок почты</label>
               <input type="email" name="email" id="email" required placeholder="E-mail, пожалуйста">
             </div>
-          </fieldset>
-          <fieldset class="competition__fieldset competition__fieldset--gray">
-            <h3>С каким приложением путешествовали?</h3>
-            <div>
-              <input type="radio" name="ios" id="ios" checked>
+          </div>
+          <div class="input-radio input-radio--gray">
+            <h3>С каким приложением<br> путешествовали?</h3>
+            <div class="input-radio__unit">
+              <input type="radio" name="radio" id="ios" checked>
               <label for="ios">Pink для iOS</label>
             </div>
-            <div>
-              <input type="radio" name="android" id="android">
+            <div class="input-radio__unit">
+              <input type="radio" name="radio" id="android">
               <label for="android">Pink на Android</label>
             </div>
-            <div>
-              <input type="radio" name="win" id="win">
+            <div class="input-radio__unit">
+              <input type="radio" name="radio" id="win">
               <label for="win">Windows Phone</label>
             </div>
-          </fieldset>
-          <fieldset class="competition__fieldset competition__fieldset--white">
+          </div>
+          <div class="input-textarea input-textarea--white">
             <h3>Опишите свои эмоции</h3>
-            <div>
-              <textarea name="comment" id="comment" cols="30" rows="10" required placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              <input type="submit" value="Отправить форму">
+            <div class="input-textarea__unit">
+              <textarea name="comment" id="comment" required placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
+          </div>
+          <div class="competition__submit">
+            <input type="submit" value="Отправить форму">
             <p><span>*</span> — обязательные поля</p>
-          </fieldset>
+          </div>
         </form>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="glasses-logo"></div>
+      <div class="main-footer__glasses-logo"><a href=""><img src="/img/logo-pink-blue-mobile.svg" alt="Pink"></a></div>
       <ul class="socials">
         <li><a href="#" class="socials__twitter"></a></li>
         <li><a href="#" class="socials__facebook"></a></li>
         <li><a href="#" class="socials__youtube"></a></li>
       </ul>
-      <div class="copyright">
+      <div class="main-footer__copyright">
         <p>Разработано</p>
-        <a href="htmlacademy.ru"><img src="#" alt="HTML Academy"></a>
+        <a href="htmlacademy.ru"><img src="/img/logo-htmlacademy.svg" alt=""></a>
       </div>
     </footer>
   </body>

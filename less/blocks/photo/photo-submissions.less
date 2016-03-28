@@ -1,0 +1,83 @@
+.photo-submissions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+}
+.photo-submissions-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.photo-submissions-unit--featured .photo-submissions__img {
+  margin-left: -20px;
+}
+.photo-submissions__img {
+  margin-bottom: 15px;
+}
+.photo-submissions-unit--featured {
+  position: relative;
+}
+.photo-submissions-unit--featured::before {
+  position: absolute;
+  content: "Панорама дня";
+  top: 0;
+  right: 0;
+  width: 140px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  .open-sans-bold;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #d22856;
+}
+.photo-submissions__autor {
+  margin-left: 17px;
+  .open-sans-bold;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+.photo-submissions__date {
+  .open-sans-light;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.photo-submissions__comment {
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 15px;
+  .open-sans-normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+.photo-submissions__like {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 50px;
+  .open-sans-normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+.photo-submissions__like::before {
+  position: absolute;
+  left: 18px;
+  top: 4px;;
+  content: "";
+  width: 14px;
+  height: 13px;
+  background: url("../../../img/icon-heart.svg") center no-repeat;
+}

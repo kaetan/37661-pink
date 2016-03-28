@@ -2,107 +2,115 @@
 <html lang="ru">
   <head>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="main-header">
-      <a href="#" class="main-logo">PINK</a>
-      <div class="main-menu">
-        <ul class="main-menu__list">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Фотографии</a></li>
-          <li><a href="#">Конкурс</a></li>
-          <li><a href="#">HTML Academy</a></li>
-        </ul>
+      <div class="main-header__top-menu main-header__top-menu--opene"><!--add "d" for opened-->
+        <a href="#" class="main-header__logo"><img src="/img/logo-pink-white-mobile.svg" alt="PINK"></a>
+        <a href="#" class="main-header__menu-btn"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
+      </div>
+      <div class="main-menu main-menu--opene"><!--add "d" for opened-->
+          <ul class="main-menu__list">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Возможности</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Стоимость</a></li>
+          </ul>
       </div>
     </header>
-    <main>
+    <main class="container">
       <section class="photos">
-        <div class="photos__intro-title">
-            <h1>Фотографии пользователей</h1>
+        <div class="photos__page-title">
+            <h1>Фотографии<br> пользователей</h1>
         </div>
-        <div class="photos__intro-text">
-          <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="photos__page-description">
+          <p>Взгляните на фотографии, которые<br> выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
         </div>
-        <article class="photo-submission photo-submission--featured">
-          <img src="" alt="" class="photo-submission__img">
-          <p class="photo-submission__autor">Анна<span class="photo-submission__date">(5 минут назад)</span></p>
-          <p class="photo-submission__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-          <p class="photo-submission__like">Нравится: 215</p>
-        </article>
-        <article class="photo-submission">
-          <img src="" alt="" class="photo-submission__img">
-          <p class="photo-submission__autor">Левон<span class="photo-submission__date">(5 часов назад)</span></p>
-          <p class="photo-submission__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="photo-submission__like">Нравится: 356</p>
-        </article>
-        <article class="photo-submission">
-          <img src="" alt="" class="photo-submission__img">
-          <p class="photo-submission__autor">Антон<span class="photo-submission__date">(12 часов назад)</span></p>
-          <p class="photo-submission__comment">Соседи будут рады!</p>
-          <p class="photo-submission__like">Нравится: 666</p>
-        </article>
-        <article class="photo-submission">
-          <img src="" alt="" class="photo-submission__img">
-          <p class="photo-submission__autor">Борис<span class="photo-submission__date">(20 часов назад)</span></p>
-          <p class="photo-submission__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="photo-submission__like">Нравится: 215</p>
-        </article>
-        <article class="photo-submission">
-          <img src="" alt="" class="photo-submission__img">
-          <p class="photo-submission__autor">Сергей<span class="photo-submission__date">(25 часов назад)</span></p>
-          <p class="photo-submission__comment">Самая кубанская в мире!</p>
-          <p class="photo-submission__like">Нравится: 4</p>
-        </article>
-        <article class="photo-submission">
-          <img src="" alt="" class="photo-submission__img">
-          <p class="photo-submission__autor">Максим<span class="photo-submission__date">(40 часов назад)</span></p>
-          <p class="photo-submission__comment">Где снег-то?</p>
-          <p class="photo-submission__like">Нравится: 150</p>
-        </article>
-        <article class="photo-submission">
-          <img src="" alt="" class="photo-submission__img">
-          <p class="photo-submission__autor">Надежда<span class="photo-submission__date">(45 часов назад)</span></p>
-          <p class="photo-submission__comment">Всем GM и взаимные лайки!</p>
-          <p class="photo-submission__like">Нравится: 2560</p>
-        </article>
+        <div class="photo-submissions">
+          <article class="photo-submissions-unit photo-submissions-unit--featured">
+            <img src="http://placehold.it/320x137/ffa7a7" alt="" class="photo-submissions__img">
+            <p class="photo-submissions__autor">Анна <span class="photo-submissions__date">(5 минут назад)</span></p>
+            <p class="photo-submissions__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+            <p class="photo-submissions__like">Нравится: 215</p>
+          </article>
+          <article class="photo-submissions-unit">
+            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <p class="photo-submissions__autor">Левон <span class="photo-submissions__date">(5 часов назад)</span></p>
+            <p class="photo-submissions__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="photo-submissions__like">Нравится: 356</p>
+          </article>
+          <article class="photo-submissions-unit">
+            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <p class="photo-submissions__autor">Антон <span class="photo-submissions__date">(12 часов назад)</span></p>
+            <p class="photo-submissions__comment">Соседи будут рады!</p>
+            <p class="photo-submissions__like">Нравится: 666</p>
+          </article>
+          <article class="photo-submissions-unit">
+            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <p class="photo-submissions__autor">Борис <span class="photo-submissions__date">(20 часов назад)</span></p>
+            <p class="photo-submissions__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photo-submissions__like">Нравится: 215</p>
+          </article>
+          <article class="photo-submissions-unit">
+            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <p class="photo-submissions__autor">Сергей <span class="photo-submissions__date">(25 часов назад)</span></p>
+            <p class="photo-submissions__comment">Самая кубанская в мире!</p>
+            <p class="photo-submissions__like">Нравится: 4</p>
+          </article>
+          <article class="photo-submissions-unit">
+            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <p class="photo-submissions__autor">Максим <span class="photo-submissions__date">(40 часов назад)</span></p>
+            <p class="photo-submissions__comment">Где снег-то?</p>
+            <p class="photo-submissions__like">Нравится: 150</p>
+          </article>
+          <article class="photo-submissions-unit">
+            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <p class="photo-submissions__autor">Надежда <span class="photo-submissions__date">(45 часов назад)</span></p>
+            <p class="photo-submissions__comment">Всем GM и взаимные лайки!</p>
+            <p class="photo-submissions__like">Нравится: 2560</p>
+          </article>
+        </div>
         <div class="photos__outro-text">
-          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p>Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section><!-- END OF PHOTOS -->
       <section class="submit-photo">
         <form action="echo" method="post">
           <div class="submit-photo__upload">
-            <img src="#" alt="Ваше фото">
+            <img src="http://placehold.it/280x374/ffa7a7" alt="Ваше фото">
           </div>
-          <div class="submit-photo__tool submit-photo__tool--crop">
-            <a href="#"><img src="#" alt=""></a>
-            <input type="range" name="" id="">
+          <div class="submit-photo__tools-list">
+            <div class="submit-photo__tool submit-photo__tool--active submit-photo__tool--crop">
+              <a href="#"><img src="/img/icon-editor-crop.svg" alt=""></a>
+              <input type="range" name="" id="">
+            </div>
+            <div class="submit-photo__tool submit-photo__tool--inactive submit-photo__tool--filter">
+              <a href="#"><img src="/img/icon-editor-fill.svg" alt=""></a>
+              <input type="range" name="" id="">
+            </div>
+            <div class="submit-photo__tool submit-photo__tool--inactive submit-photo__tool--brightness">
+              <a href=""><img src="/img/icon-editor-contrast.svg" alt=""></a>
+              <input type="range" name="" id="">
+            </div>
           </div>
-          <div class="submit-photo__tool submit-photo__tool--filter">
-            <a href="#"><img src="#" alt=""></a>
-            <input type="range" name="" id="">
-          </div>
-          <div class="submit-photo__tool submit-photo__tool--brightness">
-            <a href="#"><img src="#" alt=""></a>
-            <input type="range" name="" id="">
-          </div>
-          <input type="submit" value="Запостить">
-          <input type="reset" value="Отмена">
+          <input class="submit-photo__btn submit-photo__btn--submit" type="submit" value="Запостить">
+          <input class="submit-photo__btn submit-photo__btn--reset" type="reset" value="Отмена">
         </form>
       </section><!-- END OF SUBMIT-PHOTO -->
     </main>
     <footer class="main-footer">
-      <div class="glasses-logo"></div>
+      <div class="main-footer__glasses-logo"><a href=""><img src="/img/logo-pink-blue-mobile.svg" alt="Pink"></a></div>
       <ul class="socials">
         <li><a href="#" class="socials__twitter"></a></li>
         <li><a href="#" class="socials__facebook"></a></li>
         <li><a href="#" class="socials__youtube"></a></li>
       </ul>
-      <div class="copyright">
+      <div class="main-footer__copyright">
         <p>Разработано</p>
-        <a href="htmlacademy.ru"><img src="#" alt="HTML Academy"></a>
+        <a href="htmlacademy.ru"><img src="/img/logo-htmlacademy.svg" alt=""></a>
       </div>
     </footer>
   </body>

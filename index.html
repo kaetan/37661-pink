@@ -3,56 +3,64 @@
   <head>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="main-header">
-      <a href="#" class="main-logo">PINK</a>
-      <div class="main-menu">
-        <ul class="main-menu__list">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Возможности</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Стоимость</a></li>
-        </ul>
+      <div class="main-header__top-menu main-header__top-menu--opene"><!--add "d" for opened-->
+        <a href="#" class="main-header__logo"><img src="/img/logo-pink-white-mobile.svg" alt="PINK"></a>
+        <a href="#" class="main-header__menu-btn"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
+      </div>
+      <div class="main-menu main-menu--opene"><!--add "d" for opened-->
+          <ul class="main-menu__list">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Возможности</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Стоимость</a></li>
+          </ul>
       </div>
     </header>
     <main>
-      <section class="intro">
-        <div class="intro__slogan">
-          <h1>Взгляните на жизнь иначе!</h1>
+      <section class="index-intro">
+        <div class="index-intro__bg">
+          <h1>Взгляните на жизнь<br> иначе!</h1>
         </div>
         <article class="download">
-          <a href="#" class="download-link"></a>
+          <a href="#" class="download-link">Скачать приложение</a>
           <div class="available-platforms">
-            <a href="#" class="available-platforms__apple"><img src="" alt="apple"></a>
-            <a href="#" class="available-platforms__android"><img src="" alt="android"></a>
-            <a href="#" class="available-platforms__win"><img src="" alt="windows"></a>
-            <p class="available-platforms__text"></p>
+            <a href="#" class="available-platforms__apple"><img src="/img/logo-apple.svg" alt="apple"></a>
+            <a href="#" class="available-platforms__android"><img src="/img/logo-android.svg" alt="android"></a>
+            <a href="#" class="available-platforms__win"><img src="/img/logo-microsoft.svg" alt="windows"></a>
+            <p class="available-platforms__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
           </div>
         </article>
       </section><!--END OF INTRO -->
       <section class="information">
         <header class="information__header">
-          <h2>Устали от серости мегаполиса?<br>Нам есть, что Вам предложить!</h2>
+          <h2>Устали от серости мегаполиса?</h2>
+          <h2>Нам есть, что вам предложить!</h2>
         </header>
-        <div class="information__feature">
-          <h3>Поднимает настроение</h3>
-          <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        <div class="information__features-list">
+          <div class="information__feature">
+            <h3>Поднимает настроение</h3>
+            <p>Приложение позволит вам победить осеннюю хандру и деперессию<br> буквально в несколько кликов!</p>
+          </div>
+          <div class="information__feature">
+            <h3>Меняет мир вокруг</h3>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью,<br> чтобы усилить эффект</p>
+          </div>
+          <div class="information__feature">
+            <h3>Заводит новых друзей</h3>
+            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите<br> новых</p>
+          </div>
         </div>
-        <div class="information__feature">
-          <h3>Меняет мир вокруг</h3>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="information__feature">
-          <h3>Заводит новых друзей</h3>
-          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-        </div>
+        <!--<img src="/img/iphone-screen-mobile.png" alt="Всем привет!" class="information__picture" width="157" height="320">-->
       </section><!--END OF INFORMATION -->
       <section class="reviews">
         <article class="users-review">
           <p class="users-review__name">Николай Петров</p>
-          <p class="users-review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <p class="users-review__text">«Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br> привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной<br> фотографии!»</p>
         </article>
         <article class="users-review">
           <p class="users-review__name"></p>
@@ -64,56 +72,82 @@
         </article>
         <div class="reviews__pagination">
           <ul>
-            <li><a href="#"></a></li>
+            <li class="reviews__active-page"><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
           </ul>
         </div>
       </section><!--END OF REVIEWS -->
       <section class="price">
-        <table class="prices">
-          <tr>
-            <th></th>
+        <table class="prices-table">
+          <tr class="prices-table__row">
             <th>
-              <h3 class="prices__option-name">Стандарт</h3>
-              <p class="prices__option-cost">3,99 USD</p>
+              <h3 class="prices-table__option-name">База</h3>
+              <p class="prices-table__option-cost">1,99 USD</p>
             </th>
-            <th></th>
+            <th class="prices-table__hit">
+              <h3 class="prices-table__option-name">Стандарт</h3>
+              <p class="prices-table__option-cost">3,99 USD</p>
+            </th>
+            <th>
+              <h3 class="prices-table__option-name">Анлим</h3>
+              <p class="prices-table__option-cost">9,99 USD</p>
+            </th>
           </tr>
-          <tr>
-            <td></td>
-            <td><p class="prices__option-feature">Розовый фильтр</p></td>
-            <td></td>
+          <tr class="prices-table__row">
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Розовый фильтр</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Розовый фильтр</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Розовый фильтр</p></td>
           </tr>
-          <tr>
-            <td></td>
-            <td><p class="prices__option-feature">Смайлики</p></td>
-            <td></td>
+          <tr class="prices-table__row">
+            <td class="prices-table__option-feature prices-table__option-feature--no"><p>Смайлики</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Смайлики</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Смайлики</p></td>
           </tr>
-          <tr>
-            <td></td>
-            <td><p class="prices__option-feature">Комментарии</p></td>
-            <td></td>
+          <tr class="prices-table__row">
+            <td class="prices-table__option-feature prices-table__option-feature--no"><p>Комментарии</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--no"><p>Комментарии</p></td>
+            <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Комментарии</p></td>
           </tr>
         </table>
         <div class="price__pagination">
           <ul>
             <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li class="price__active-page"><a href="#"></a></li>
             <li><a href="#"></a></li>
           </ul>
         </div>
       </section><!--END OF PRICES -->
       <section class="contacts">
         <h2>Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <p>Звоните:</p>
-        <span>+7 (812) 555-66-66</span>
-        <p>Пишите:</p>
-        <span>mail@htmlacademy.ru</span>
-        <p>Приезжайте в гости:</p>
-        <span>ул. Большая Конюшенная, 19/8</span>
-        <div class="contacts__map"></div>
+        <div class="contacts__element">
+          <p>Звоните:</p>
+          <span>+7 (812) 555-66-66</span>
+        </div>
+        <div class="contacts__element">
+          <p>Пишите:</p>
+          <span>mail@htmlacademy.ru</span>
+        </div>
+        <div class="contacts__element">
+          <p>Приезжайте в гости:</p>
+          <span>ул. Большая<br> Конюшенная, 19/8</span>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5916545514374!2d30.321935313194775!3d59.93891779147732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1458458898683" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </section><!--END OF CONTACTS -->
     </main>
+    <footer class="main-footer main-footer--index">
+      <div class="main-footer__glasses-logo"><a href=""><img src="/img/logo-pink-blue-mobile.svg" alt="Pink"></a></div>
+      <ul class="socials">
+        <li><a href="#" class="socials__twitter"></a></li>
+        <li><a href="#" class="socials__facebook"></a></li>
+        <li><a href="#" class="socials__youtube"></a></li>
+      </ul>
+      <div class="main-footer__copyright">
+        <p>Разработано</p>
+        <a href="htmlacademy.ru"><img src="/img/logo-htmlacademy.svg" alt=""></a>
+      </div>
+    </footer>
   </body>
 </html>
