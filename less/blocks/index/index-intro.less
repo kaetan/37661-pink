@@ -6,9 +6,13 @@
   position: relative;
   margin-top: -4px;
   padding-top: 88px;
-  background: url(../../../img/bg-back-mobile.jpg) center top no-repeat;
+  background: url(/img/bg-back-mobile.jpg) center top no-repeat;
   background-color: #1d2631;
   color: #ffffff;
+  
+  @media @tablet-widths {
+    background: none;
+  }
 }
 .index-intro__bg::after {
   content: "";
@@ -17,7 +21,7 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-  background: url(../../../img/iphone-hand-mobile.png) no-repeat;
+  background: url(/img/iphone-hand-mobile.png) no-repeat;
 }
 .index-intro__bg h1 {
   margin: 0;
@@ -25,4 +29,14 @@
   font-size: 24px;
   line-height: 30px;
   .open-sans-light;
+}
+
+/*  ПЛАНШЕТЫ  */
+
+@media @tablet-widths {
+  
+  .index-intro__bg {
+    background: none;
+  }
+  
 }
