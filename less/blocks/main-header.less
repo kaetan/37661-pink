@@ -18,10 +18,19 @@
 .main-header__logo {
   float: left;
   margin-top: 21px;
-  margin-left: 20px;;
+  margin-left: 20px;
 }
 .main-header__menu-btn {
   float: right;
   margin-top: 21px;
   margin-right: 20px;
+}
+@media @tablet-widths {
+  .main-header__top-menu {
+    top: 0;
+    min-height: 110px;
+  }
+  .main-header__top-menu--opened {
+    min-height: 110px;
+  }
 }

@@ -14,10 +14,10 @@
       </div>
       <div class="main-menu main-menu--opene"><!--add "d" for opened-->
           <ul class="main-menu__list">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Возможности</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Стоимость</a></li>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Фотографии</a></li>
+            <li><a href="#">Конкурс</a></li>
+            <li><a href="#">HTML Academy</a></li>
           </ul>
       </div>
     </header>
@@ -38,8 +38,7 @@
       </section><!--END OF INTRO -->
       <section class="information">
         <header class="information__header">
-          <h2>Устали от серости мегаполиса?</h2>
-          <h2>Нам есть, что вам предложить!</h2>
+          <h2>Устали от серости мегаполиса? <br><br>Нам есть, что вам<br> предложить!</h2>
         </header>
         <div class="information__features-list">
           <div class="information__feature">
@@ -55,10 +54,15 @@
             <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите<br> новых</p>
           </div>
         </div>
-        <!--<img src="/img/iphone-screen-mobile.png" alt="Всем привет!" class="information__picture" width="157" height="320">-->
       </section><!--END OF INFORMATION -->
+      <section class="effect">
+        <h2 class="effect__title">Эффект<br> на 24 часа!</h2>
+        <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a href="#" class="effect__more">Узнать больше об исследовании</a>
+      </section><!--END OF EFFECT -->
       <section class="reviews">
-        <article class="users-review">
+        <article class="users-review users-review--active">
+          <p class="users-review__job">25 лет, водитель трамвая</p>
           <p class="users-review__name">Николай Петров</p>
           <p class="users-review__text">«Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br> привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной<br> фотографии!»</p>
         </article>
@@ -81,6 +85,7 @@
       <section class="price">
         <table class="prices-table">
           <tr class="prices-table__row">
+           <th class="prices-table__th-no-mobile"></th>
             <th>
               <h3 class="prices-table__option-name">База</h3>
               <p class="prices-table__option-cost">1,99 USD</p>
@@ -95,16 +100,19 @@
             </th>
           </tr>
           <tr class="prices-table__row">
+            <td class="prices-table__option-feature prices-table__option-feature--no-mobile"><p>Розовый фильтр</p></td>
             <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Розовый фильтр</p></td>
             <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Розовый фильтр</p></td>
             <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Розовый фильтр</p></td>
           </tr>
           <tr class="prices-table__row">
+            <td class="prices-table__option-feature prices-table__option-feature--no-mobile"><p>Смайлики</p></td>
             <td class="prices-table__option-feature prices-table__option-feature--no"><p>Смайлики</p></td>
             <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Смайлики</p></td>
             <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Смайлики</p></td>
           </tr>
           <tr class="prices-table__row">
+            <td class="prices-table__option-feature prices-table__option-feature--no-mobile"><p>Комментарии</p></td>
             <td class="prices-table__option-feature prices-table__option-feature--no"><p>Комментарии</p></td>
             <td class="prices-table__option-feature prices-table__option-feature--no"><p>Комментарии</p></td>
             <td class="prices-table__option-feature prices-table__option-feature--yes"><p>Комментарии</p></td>
