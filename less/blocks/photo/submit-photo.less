@@ -1,10 +1,14 @@
 .submit-photo {
+  padding-bottom: 29px;
+  background-color: #f2f2f2;
+}
+.submit-photo__flex-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 29px;
-  background-color: #f2f2f2;
+  width: 280px;
+  margin: 0 auto;
 }
 .submit-photo__tools-list {
   position: relative;
@@ -20,15 +24,17 @@
   display: flex;
   flex-direction: column;
 }
-.submit-photo__tool--active input{
-  position: absolute;
-  top: 80px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-.submit-photo__tool--inactive input{
-  display: none;
+@media @mobile-widths-only {
+  .submit-photo__tool--active input{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .submit-photo__tool--inactive input{
+    display: none;
+  }
 }
 .submit-photo__tool input{
   width: 240px;
@@ -44,7 +50,7 @@
   display: block;
 }
 .submit-photo__btn {
-  width: 100%;
+  width: 280px;
   margin-bottom: 12px;
   padding-top: 17px;
   padding-bottom: 17px;
@@ -64,4 +70,52 @@
   color: #dddfe0;
   border: 3px solid #dddfe0;
   border-radius: 30px;
+}
+
+
+@media @tablet-widths {
+  .submit-photo {
+    padding-top: 57px;
+  }
+  .submit-photo__flex-wrapper {
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 620px;
+    height: 400px;
+  }
+  .submit-photo__upload img{
+    width: 300px;
+    height: 400px;
+  }
+  .submit-photo__tools-list {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 10px;
+    width: 275px;
+  }
+  .submit-photo__tool {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 27px;
+    padding-bottom: 24px;
+    padding-right: 18px;
+    border-bottom: 1px solid #dddfe0;
+  }
+  .submit-photo__tool img {
+    width: 22px;
+    height: 22px;
+  }
+  .submit-photo__tool input {
+    width: 202px;
+  }
+  .submit-photo__final-buttons {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .submit-photo__btn--reset {
+    margin-bottom: 0;
+  }
 }

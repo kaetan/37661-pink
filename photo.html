@@ -26,52 +26,53 @@
     </header>
     <main class="container">
       <section class="photos">
-        
         <div class="photos__page-description">
           <p>Взгляните на фотографии, которые<br> выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
         </div>
         <div class="photo-submissions">
           <article class="photo-submissions-unit photo-submissions-unit--featured">
             <img src="http://placehold.it/320x137/ffa7a7" alt="" class="photo-submissions__img">
-            <p class="photo-submissions__autor">Анна <span class="photo-submissions__date">(5 минут назад)</span></p>
-            <p class="photo-submissions__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-            <p class="photo-submissions__like">Нравится: 215</p>
+            <div class="photo-submissions__textblock">
+              <p class="photo-submissions__autor">Анна <span class="photo-submissions__date">(5 минут назад)</span></p>
+              <p class="photo-submissions__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <a class="photo-submissions__like"><p>Нравится: 215</p><img src="/img/icon-heart.svg" alt=""></a>
+            </div>
           </article>
           <article class="photo-submissions-unit">
             <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
             <p class="photo-submissions__autor">Левон <span class="photo-submissions__date">(5 часов назад)</span></p>
             <p class="photo-submissions__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="photo-submissions__like">Нравится: 356</p>
+            <a class="photo-submissions__like"><p>Нравится: 356</p><img src="/img/icon-heart.svg" alt=""></a>
           </article>
           <article class="photo-submissions-unit">
             <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
             <p class="photo-submissions__autor">Антон <span class="photo-submissions__date">(12 часов назад)</span></p>
             <p class="photo-submissions__comment">Соседи будут рады!</p>
-            <p class="photo-submissions__like">Нравится: 666</p>
+            <a class="photo-submissions__like"><p>Нравится: 666</p><img src="/img/icon-heart.svg" alt=""></a>
           </article>
           <article class="photo-submissions-unit">
             <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
             <p class="photo-submissions__autor">Борис <span class="photo-submissions__date">(20 часов назад)</span></p>
             <p class="photo-submissions__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="photo-submissions__like">Нравится: 215</p>
+            <a class="photo-submissions__like"><p>Нравится: 215</p><img src="/img/icon-heart.svg" alt=""></a>
           </article>
           <article class="photo-submissions-unit">
             <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
             <p class="photo-submissions__autor">Сергей <span class="photo-submissions__date">(25 часов назад)</span></p>
             <p class="photo-submissions__comment">Самая кубанская в мире!</p>
-            <p class="photo-submissions__like">Нравится: 4</p>
+            <a class="photo-submissions__like"><p>Нравится: 4</p><img src="/img/icon-heart.svg" alt=""></a>
           </article>
           <article class="photo-submissions-unit">
             <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
             <p class="photo-submissions__autor">Максим <span class="photo-submissions__date">(40 часов назад)</span></p>
             <p class="photo-submissions__comment">Где снег-то?</p>
-            <p class="photo-submissions__like">Нравится: 150</p>
+            <a class="photo-submissions__like"><p>Нравится: 150</p><img src="/img/icon-heart.svg" alt=""></a>
           </article>
           <article class="photo-submissions-unit">
             <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
             <p class="photo-submissions__autor">Надежда <span class="photo-submissions__date">(45 часов назад)</span></p>
             <p class="photo-submissions__comment">Всем GM и взаимные лайки!</p>
-            <p class="photo-submissions__like">Нравится: 2560</p>
+            <a class="photo-submissions__like"><p>Нравится: 2560</p><img src="/img/icon-heart.svg" alt=""></a>
           </article>
         </div>
         <div class="photos__outro-text">
@@ -80,25 +81,29 @@
       </section><!-- END OF PHOTOS -->
       <section class="submit-photo">
         <form action="echo" method="post">
-          <div class="submit-photo__upload">
-            <img src="http://placehold.it/280x374/ffa7a7" alt="Ваше фото">
+          <div class="submit-photo__flex-wrapper">
+            <div class="submit-photo__upload">
+              <img src="http://placehold.it/280x374/ffa7a7" alt="Ваше фото">
+            </div>
+            <div class="submit-photo__tools-list">
+              <div class="submit-photo__tool submit-photo__tool--active submit-photo__tool--crop">
+                <a href="#"><img src="/img/icon-editor-crop.svg" alt=""></a>
+                <input type="range" name="" id="">
+              </div>
+              <div class="submit-photo__tool submit-photo__tool--inactive submit-photo__tool--filter">
+                <a href="#"><img src="/img/icon-editor-fill.svg" alt=""></a>
+                <input type="range" name="" id="">
+              </div>
+              <div class="submit-photo__tool submit-photo__tool--inactive submit-photo__tool--brightness">
+                <a href=""><img src="/img/icon-editor-contrast.svg" alt=""></a>
+                <input type="range" name="" id="">
+              </div>
+            </div>
+            <div class="submit-photo__final-buttons">
+              <input class="submit-photo__btn submit-photo__btn--submit" type="submit" value="Запостить">
+              <input class="submit-photo__btn submit-photo__btn--reset" type="reset" value="Отмена">
+            </div>
           </div>
-          <div class="submit-photo__tools-list">
-            <div class="submit-photo__tool submit-photo__tool--active submit-photo__tool--crop">
-              <a href="#"><img src="/img/icon-editor-crop.svg" alt=""></a>
-              <input type="range" name="" id="">
-            </div>
-            <div class="submit-photo__tool submit-photo__tool--inactive submit-photo__tool--filter">
-              <a href="#"><img src="/img/icon-editor-fill.svg" alt=""></a>
-              <input type="range" name="" id="">
-            </div>
-            <div class="submit-photo__tool submit-photo__tool--inactive submit-photo__tool--brightness">
-              <a href=""><img src="/img/icon-editor-contrast.svg" alt=""></a>
-              <input type="range" name="" id="">
-            </div>
-          </div>
-          <input class="submit-photo__btn submit-photo__btn--submit" type="submit" value="Запостить">
-          <input class="submit-photo__btn submit-photo__btn--reset" type="reset" value="Отмена">
         </form>
       </section><!-- END OF SUBMIT-PHOTO -->
     </main>
