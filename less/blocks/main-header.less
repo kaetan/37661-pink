@@ -1,6 +1,11 @@
 .main-header {
   .container;
   position: relative;
+  min-height: 237px;
+  background: url(/img/bg-back-mobile.jpg) center top no-repeat;
+}
+.main-header--index-only {
+  min-height: 0;
 }
 .main-header__top-menu {
   width: 100%;
@@ -25,12 +30,40 @@
   margin-top: 21px;
   margin-right: 20px;
 }
+.main-header__page-title {
+  position: relative;
+  margin-top: 0px;   /*  было -4 зачем-то  */
+  padding-top: 99px;
+  color: #ffffff;
+}
+.main-header__page-title h1 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  .open-sans-light;
+}
+
+
 @media @tablet-widths {
+  .main-header {
+    min-height: 440px;
+    background: url("/img/bg-back-tablet@1x.jpg") center top no-repeat;
+  }
+  .main-header--index-only {
+    min-height: 0;
+  }
   .main-header__top-menu {
     top: 0;
     min-height: 110px;
   }
   .main-header__top-menu--opened {
     min-height: 110px;
+  }
+  .main-header__page-title {
+    padding-top: 180px;
+  }
+  .main-header__page-title h1 {
+    font-size: 50px;
+    line-height: 60px;
   }
 }

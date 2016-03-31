@@ -20,94 +20,99 @@
             <li><a href="#">HTML Academy</a></li>
           </ul>
       </div>
+      <div class="main-header__page-title">
+         <h1>Конкурс на самое безбашеное<br> путешествие с Пинк</h1>
+      </div>
     </header>
     <main>
-      <section class="competition">
-        <div class="competition__page-title">
-          <h1>Конкурс на самое безбашеное<br> путешествие с Пинк</h1>
-        </div>
-        <div class="competition__page-description">
-          <p>Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
-        </div>
-        <form action="echo" method="post">
-          <div class="input-text input-text--white">
-            <div class="input-text__unit">
-              <label for="first-name">Имя:</label>
-              <input type="text" name="first-name" id="first-name" required placeholder="Введите ваше имя">
-            </div>
-            <div class="input-text__unit">
-              <label for="second-name">Фамилия:</label>
-              <input type="text" name="second-name" id="second-name" required placeholder="Укажите фамилию">
-            </div>
-            <div class="input-text__unit">
-              <label for="patronymic">Отчество:</label>
-              <input type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже">
-            </div>
+      <div class="tablet-desktop-wrapper">
+        <section class="competition">
+          <div class="competition__page-description">
+            <p>Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
           </div>
-          <div class="input-checkbox input-checkbox--gray">
-            <h3>Ваши безбашенные<br> достижения в путешествии</h3>
-            <div class="input-checkbox__unit">
-              <input type="checkbox" name="selfie" id="selfie" checked>
-              <label for="selfie">Сделал селфи с акулой</label>
+          <form action="echo" method="post">
+            <div class="competition__flex-wrapper">
+              <div class="input-text input-text--white input-text--no-border input-text--first">
+                <div class="input-text__unit">
+                  <label for="first-name">Имя:</label>
+                  <input type="text" name="first-name" id="first-name" required placeholder="Введите ваше имя">
+                </div>
+                <div class="input-text__unit">
+                  <label for="second-name">Фамилия:</label>
+                  <input type="text" name="second-name" id="second-name" required placeholder="Укажите фамилию">
+                </div>
+                <div class="input-text__unit">
+                  <label for="patronymic">Отчество:</label>
+                  <input type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже">
+                </div>
+              </div>
+              <div class="input-checkbox input-checkbox--gray">
+                <h3 class="input-checkbox__title">Ваши безбашенные<br> достижения в путешествии</h3>
+                <div class="input-checkbox__unit">
+                  <input type="checkbox" name="selfie" id="selfie" checked>
+                  <label for="selfie">Сделал селфи с акулой</label>
+                </div>
+                <div class="input-checkbox__unit">
+                  <input type="checkbox" name="burned" id="burned" checked>
+                  <label for="burned">Обгорел на пляже</label>
+                </div>
+                <div class="input-checkbox__unit">
+                  <input type="checkbox" name="chuck" id="chuck">
+                  <label for="chuck">Видел Чака Норриса</label>
+                </div>
+                <div class="input-checkbox__unit">
+                  <input type="checkbox" name="souvenirs" id="souvenirs">
+                  <label for="souvenirs">Накупил сувениров</label>
+                </div>
+                <div class="input-checkbox__unit">
+                  <input type="checkbox" name="tower" id="tower" checked>
+                  <label for="tower">Удержал башню</label>
+                </div>
+                <div class="input-checkbox__unit">
+                  <input type="checkbox" name="mayhem" id="mayhem">
+                  <label for="mayhem">Разгромил отель</label>
+                </div>
+              </div>
+              <div class="input-text input-text--second input-text--white input-text--pbot54">
+                <h3 class="input-text__title">Контактная информация</h3>
+                <div class="input-text__unit">
+                  <label for="phone-number">Номер телефончика</label>
+                  <input type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="input-text__unit">
+                  <label for="email">Адресок почты</label>
+                  <input type="email" name="email" id="email" required placeholder="E-mail, пожалуйста">
+                </div>
+              </div>
+              <div class="input-radio input-radio--gray">
+                <h3 class="input-radio__title">С каким приложением<br> путешествовали?</h3>
+                <div class="input-radio__unit">
+                  <input type="radio" name="radio" id="ios" checked>
+                  <label for="ios">Pink для iOS</label>
+                </div>
+                <div class="input-radio__unit">
+                  <input type="radio" name="radio" id="android">
+                  <label for="android">Pink на Android</label>
+                </div>
+                <div class="input-radio__unit">
+                  <input type="radio" name="radio" id="win">
+                  <label for="win">Windows Phone</label>
+                </div>
+              </div>
+              <div class="input-textarea input-textarea--white">
+                <h3 class="input-textarea__title">Опишите свои эмоции</h3>
+                <div class="input-textarea__unit">
+                  <textarea name="comment" id="comment" required placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                </div>
+              </div>
+              <div class="competition__submit">
+                <input type="submit" value="Отправить форму">
+                <p><span>*</span> — обязательные поля</p>
+              </div>
             </div>
-            <div class="input-checkbox__unit">
-              <input type="checkbox" name="burned" id="burned" checked>
-              <label for="burned">Обгорел на пляже</label>
-            </div>
-            <div class="input-checkbox__unit">
-              <input type="checkbox" name="chuck" id="chuck">
-              <label for="chuck">Видел Чака Норриса</label>
-            </div>
-            <div class="input-checkbox__unit">
-              <input type="checkbox" name="souvenirs" id="souvenirs">
-              <label for="souvenirs">Накупил сувениров</label>
-            </div>
-            <div class="input-checkbox__unit">
-              <input type="checkbox" name="tower" id="tower" checked>
-              <label for="tower">Удержал башню</label>
-            </div>
-            <div class="input-checkbox__unit">
-              <input type="checkbox" name="mayhem" id="mayhem">
-              <label for="mayhem">Разгромил отель</label>
-            </div>
-          </div>
-          <div class="input-text input-text--white input-text--pbot54">
-            <div class="input-text__unit">
-              <label for="phone-number">Номер телефончика</label>
-              <input type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="input-text__unit">
-              <label for="email">Адресок почты</label>
-              <input type="email" name="email" id="email" required placeholder="E-mail, пожалуйста">
-            </div>
-          </div>
-          <div class="input-radio input-radio--gray">
-            <h3>С каким приложением<br> путешествовали?</h3>
-            <div class="input-radio__unit">
-              <input type="radio" name="radio" id="ios" checked>
-              <label for="ios">Pink для iOS</label>
-            </div>
-            <div class="input-radio__unit">
-              <input type="radio" name="radio" id="android">
-              <label for="android">Pink на Android</label>
-            </div>
-            <div class="input-radio__unit">
-              <input type="radio" name="radio" id="win">
-              <label for="win">Windows Phone</label>
-            </div>
-          </div>
-          <div class="input-textarea input-textarea--white">
-            <h3>Опишите свои эмоции</h3>
-            <div class="input-textarea__unit">
-              <textarea name="comment" id="comment" required placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </div>
-          </div>
-          <div class="competition__submit">
-            <input type="submit" value="Отправить форму">
-            <p><span>*</span> — обязательные поля</p>
-          </div>
-        </form>
-      </section>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer__glasses-logo"><a href=""><img src="/img/logo-pink-blue-mobile.svg" alt="Pink"></a></div>
