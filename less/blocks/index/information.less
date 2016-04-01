@@ -23,6 +23,9 @@
 .information__header h2:last-of-type {
   margin-bottom: 0px;
 }
+ .information__image {
+  display: none;
+}
 .information__features-list {
   padding-top: 81px;
 }
@@ -65,5 +68,65 @@
     text-align: left;
     padding-left: 350px;
     padding-top: 76px;
+  }
+}
+
+
+@media @desktop-widths {
+  .information {
+    box-sizing: border-box;
+    
+  }
+  .information__header {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .information__header h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .information__header br:nth-of-type(2) {
+    display: none;
+  }
+  .information {
+    position: relative;
+    padding-bottom: 45px;
+    background: none;
+    background-color: #f2f2f2;
+  }
+  .information__images-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .information__image {
+    display: block;
+  }
+  .information__features-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .information__feature {
+    margin-top: 30px;
+    width: 30%;
+  }
+  .information__feature h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .information__feature p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .information__feature br {
+    display: none;
   }
 }

@@ -4,13 +4,28 @@
 
 @media @tablet-widths {
   .effect {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     min-height: 335px;
-    padding-left: 350px;
+    padding-left: 40px;
     padding-top: 90px;
     padding-right: 40px;
     text-align: left;
-    background: url("/img/icon-timer.svg") left 40px bottom no-repeat;
+  }
+  .effect__timer {
+    margin-right: 104px;
+  }
+  .effect__timer span {
+    display: block;
+    width: 204px;
+    height: 204px;
+    .open-sans-bold;
+    text-align: center;
+    font-size: 96px;
+    line-height: 190px;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 50%;
   }
   .effect__title {
     .open-sans-bold;
@@ -29,5 +44,40 @@
     line-height: 24px;
     color: #d22856;
   }
-  
+}
+
+
+@media @desktop-widths {
+  .effect {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 66px;
+    background-color: #f2f2f2;
+  }
+  .effect__timer {
+    
+    margin-right: 68px;
+  }
+  .effect__timer span {
+    width: 253px;
+    height: 253px;
+    font-size: 120px;
+    line-height: 237px;
+    border: 17px solid #d22856;
+  }
+  .effect__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .effect__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .effect__more {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

@@ -11,17 +11,15 @@
       <div class="main-header__top-menu main-header__top-menu--opene"><!--add "d" for opened-->
         <a href="#" class="main-header__logo"><img src="/img/logo-pink-white-mobile.svg" alt="PINK"></a>
         <a href="#" class="main-header__menu-btn"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
-      </div>
-      <div class="main-menu main-menu--opene"><!--add "d" for opened-->
+        <div class="main-menu main-menu--opene"><!--add "d" for opened-->
           <ul class="main-menu__list">
             <li><a href="#">Главная</a></li>
             <li><a href="#">Фотографии</a></li>
             <li><a href="#">Конкурс</a></li>
             <li><a href="#">HTML Academy</a></li>
           </ul>
+        </div>
       </div>
-    </header>
-    <main>
       <section class="index-intro">
         <div class="index-intro__bg">
           <h1>Взгляните на жизнь<br> иначе!</h1>
@@ -36,11 +34,21 @@
           </div>
         </article>
       </section><!--END OF INTRO -->
+    </header>
+    <main>
       <section class="information">
         <header class="information__header">
           <h2>Устали от серости мегаполиса? <br><br>Нам есть, что вам<br> предложить!</h2>
         </header>
+        <!-- <div class="information__images-list">
+          <img src="/img/iphone-screen-desktop-1@1x.png" alt="">
+          <img src="/img/iphone-screen-desktop-2@1x.png" alt="">
+          <img src="/img/iphone-screen-desktop-3@1x.png" alt="">
+        </div> -->
         <div class="information__features-list">
+          <img class="information__image" src="/img/iphone-screen-desktop-1@1x.png" alt="">
+          <img class="information__image" src="/img/iphone-screen-desktop-2@1x.png" alt="">
+          <img class="information__image" src="/img/iphone-screen-desktop-3@1x.png" alt="">
           <div class="information__feature">
             <h3>Поднимает настроение</h3>
             <p>Приложение позволит вам победить осеннюю хандру и деперессию<br> буквально в несколько кликов!</p>
@@ -56,15 +64,20 @@
         </div>
       </section><!--END OF INFORMATION -->
       <section class="effect">
-        <h2 class="effect__title">Эффект<br> на 24 часа!</h2>
-        <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a href="#" class="effect__more">Узнать больше об исследовании</a>
+        <div class="effect__timer"><span>24</span></div>
+        <div class="effect__info">
+          <h2 class="effect__title">Эффект<br> на 24 часа!</h2>
+          <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#" class="effect__more">Узнать больше об исследовании</a>
+        </div>
       </section><!--END OF EFFECT -->
       <section class="reviews">
+        <a href="#" class="reviews__arrow-left"></a>
+        <a href="#" class="reviews__arrow-right"></a>
         <article class="users-review users-review--active">
           <p class="users-review__job">25 лет, водитель трамвая</p>
           <p class="users-review__name">Николай Петров</p>
-          <p class="users-review__text">«Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br> привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной<br> фотографии!»</p>
+          <p class="users-review__text"><span>«</span>Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br> привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной<br> фотографии!<span>»</span></p>
         </article>
         <article class="users-review">
           <p class="users-review__name"></p>
@@ -128,17 +141,19 @@
       </section><!--END OF PRICES -->
       <section class="contacts">
         <h2>Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <div class="contacts__element">
-          <p>Звоните:</p>
-          <span>+7 (812) 555-66-66</span>
-        </div>
-        <div class="contacts__element">
-          <p>Пишите:</p>
-          <span>mail@htmlacademy.ru</span>
-        </div>
-        <div class="contacts__element">
-          <p>Приезжайте в гости:</p>
-          <span>ул. Большая<br> Конюшенная, 19/8</span>
+        <div class="contacts__elements-list">
+          <div class="contacts__element">
+            <p>Звоните:</p>
+            <span>+7 (812) 555-66-66</span>
+          </div>
+          <div class="contacts__element">
+            <p>Пишите:</p>
+            <span>mail@htmlacademy.ru</span>
+          </div>
+          <div class="contacts__element">
+            <p>Приезжайте в гости:</p>
+            <span>ул. Большая<br> Конюшенная, 19/8</span>
+          </div>
         </div>
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5916545514374!2d30.321935313194775!3d59.93891779147732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1458458898683" frameborder="0" style="border:0" allowfullscreen></iframe>

@@ -1,6 +1,11 @@
 .reviews {
+  position: relative;
   padding-top: 45px;
   padding-bottom: 33px;
+}
+.reviews__arrow-left,
+.reviews__arrow-right {
+  display: none;
 }
 .users-review {
   display: none;
@@ -89,6 +94,54 @@
     color: #283645;
   }
   .users-review__text br {
+    display: none;
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+    padding-left: 130px;
+    padding-top: 190px;
+    padding-right: 130px;
+  }
+  .reviews::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 71px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 79px;
+    height: 63px;
+    background: url("/img/icon-quotes.svg") center no-repeat;
+  }
+  .reviews__arrow-left {
+    display: block;
+    position: absolute;
+    left: 130px;
+    top: 210px;
+    width: 22px;
+    height: 41px;
+    background: url("/img/icon-review-arrow-left.svg") center no-repeat;
+  }
+  .reviews__arrow-right {
+    display: block;
+    position: absolute;
+    right: 130px;
+    top: 210px;
+    width: 22px;
+    height: 41px;
+    background: url("/img/icon-review-arrow-right.svg") center no-repeat;
+  }
+  .users-review__text {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .users-review__text span {
+    display: none;
+  }
+  .reviews__pagination {
     display: none;
   }
 }

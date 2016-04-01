@@ -25,6 +25,7 @@
   color: #ffffff;
 }
 .prices-table__hit::before {
+  display: block;
   content: "";
   position: absolute;
   top: 0;
@@ -140,5 +141,32 @@
   }
   .prices-table__row:nth-of-type(2) .prices-table__option-feature--no-mobile {
     border-top: 2px solid #e5e5e5;
+  }
+}
+
+
+@media @desktop-widths {
+  .prices-table th {
+    min-width: 233px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+  .prices-table td {
+    min-width: 233px;
+  }
+  .prices-table__option-name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .prices-table__option-cost {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .prices-table .prices-table__option-feature--no-mobile {
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
+  .prices-table__option-feature--no-mobile p {
+    font-size: 18px;
   }
 }
