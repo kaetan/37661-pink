@@ -29,6 +29,7 @@
 .photo-submissions-unit--featured::before {
   position: absolute;
   content: "Панорама дня";
+  z-index: 10;
   top: 0;
   right: 0;
   width: 140px;
@@ -78,6 +79,11 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #d22856;
+}
+.photo-submissions__like-heart {
+  width: 25px;
+  height: auto;
+  background: url("/img/icon-heart.svg") center no-repeat;
 }
 .photo-submissions__like img {
   padding-right: 17px;
@@ -146,5 +152,24 @@
     justify-content: space-between;
     padding-right: 31px;
     width: 100%;
+  }
+  .photo-submissions-unit--featured::before {
+    top: 57px;
+  }
+}
+
+
+@media @desktop-widths {
+  .photo-submissions {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .photo-submissions-unit--featured .photo-submissions__img {
+    transform: translateX(-130px);
+    width: 1200px;
+    height: 506px;
+  }
+  .photo-submissions-unit--featured::before {
+    top: 54px;
   }
 }
