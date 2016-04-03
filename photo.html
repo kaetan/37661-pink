@@ -9,8 +9,19 @@
   <body>
     <header class="main-header">
       <div class="main-header__top-menu main-header__top-menu--opene"><!--add "d" for opened-->
-        <a href="#" class="main-header__logo"><img src="/img/logo-pink-white-mobile.svg" alt="PINK"></a>
-        <a href="#" class="main-header__menu-btn"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
+        <a href="#" class="main-header__logo">
+          <picture>
+            <source
+              media="(min-width: 1200px)" srcset="/img/logo-pink-white-desktop.svg">
+            <source
+              media="(min-width: 700px)" srcset="/img/logo-pink-white-tablet.svg">
+            <img 
+              src="/img/logo-pink-white-mobile.svg" alt="PINK">
+          </picture>
+        </a>
+        <a href="#" class="main-header__menu-btn main-header__menu-btn--active"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
+        <a href="#" class="main-header__menu-btn "><img src="/img/icon-menu-cross.svg" alt="Menu"></a>
+        <!--add class "main-header__menu-btn--active" to show a required state of btn-->
         <div class="main-menu main-menu--opene"><!--add "d" for opened-->
           <ul class="main-menu__list">
             <li><a href="#">Главная</a></li>
@@ -31,7 +42,17 @@
         </div>
         <div class="photo-submissions">
           <article class="photo-submissions-unit photo-submissions-unit--featured">
-            <img src="http://placehold.it/320x137/ffa7a7" alt="" class="photo-submissions__img">
+            <picture>
+              <source media="(min-width: 1200px)" 
+                srcset="img/panorama-desktop.jpg 1x,
+                        img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" 
+                srcset="img/panorama-tablet.jpg 1x,
+                        img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile.jpg" 
+                srcset="img/img/panorama-mobile.jpg@2x 2x"
+                   alt="" class="photo-submissions__img">
+            </picture>
             <div class="photo-submissions__textblock">
               <p class="photo-submissions__autor">Анна <span class="photo-submissions__date">(5 минут назад)</span></p>
               <p class="photo-submissions__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
@@ -39,37 +60,97 @@
             </div>
           </article>
           <article class="photo-submissions-unit">
-            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <picture>
+              <source media="(min-width: 1200px)" 
+                srcset="img/photo-1-desktop.jpg 1x,
+                        img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" 
+                srcset="img/photo-1-tablet.jpg 1x,
+                        img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile.jpg" 
+                srcset="img/img/photo-1-mobile.jpg@2x 2x"
+                   alt="" class="photo-submissions__img">
+            </picture>
             <p class="photo-submissions__autor">Левон <span class="photo-submissions__date">(5 часов назад)</span></p>
             <p class="photo-submissions__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photo-submissions__like"><p>Нравится: 356</p><a class="photo-submissions__like-heart" href="#"></a></div>
           </article>
           <article class="photo-submissions-unit">
-            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <picture>
+              <source media="(min-width: 1200px)" 
+                srcset="img/photo-2-desktop.jpg 1x,
+                        img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" 
+                srcset="img/photo-2-tablet.jpg 1x,
+                        img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile.jpg" 
+                srcset="img/img/photo-2-mobile.jpg@2x 2x"
+                   alt="" class="photo-submissions__img">
+            </picture>
             <p class="photo-submissions__autor">Антон <span class="photo-submissions__date">(12 часов назад)</span></p>
             <p class="photo-submissions__comment">Соседи будут рады!</p>
             <div class="photo-submissions__like"><p>Нравится: 666</p><a class="photo-submissions__like-heart" href="#"></a></div>
           </article>
           <article class="photo-submissions-unit">
-            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <picture>
+              <source media="(min-width: 1200px)" 
+                srcset="img/photo-3-desktop.jpg 1x,
+                        img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" 
+                srcset="img/photo-3-tablet.jpg 1x,
+                        img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile.jpg" 
+                srcset="img/img/photo-3-mobile.jpg@2x 2x"
+                   alt="" class="photo-submissions__img">
+            </picture>
             <p class="photo-submissions__autor">Борис <span class="photo-submissions__date">(20 часов назад)</span></p>
             <p class="photo-submissions__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo-submissions__like"><p>Нравится: 215</p><a class="photo-submissions__like-heart" href="#"></a></div>
           </article>
           <article class="photo-submissions-unit">
-            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <picture>
+              <source media="(min-width: 1200px)" 
+                srcset="img/photo-4-desktop.jpg 1x,
+                        img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" 
+                srcset="img/photo-4-tablet.jpg 1x,
+                        img/photo-4-tablet@2x.jpg 2x">
+              <img src="img/photo-4-mobile.jpg" 
+                srcset="img/img/photo-4-mobile.jpg@2x 2x"
+                   alt="" class="photo-submissions__img">
+            </picture>
             <p class="photo-submissions__autor">Сергей <span class="photo-submissions__date">(25 часов назад)</span></p>
             <p class="photo-submissions__comment">Самая кубанская в мире!</p>
             <div class="photo-submissions__like"><p>Нравится: 4</p><a class="photo-submissions__like-heart" href="#"></a></div>
           </article>
           <article class="photo-submissions-unit">
-            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <picture>
+              <source media="(min-width: 1200px)" 
+                srcset="img/photo-5-desktop.jpg 1x,
+                        img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" 
+                srcset="img/photo-5-tablet.jpg 1x,
+                        img/photo-5-tablet@2x.jpg 2x">
+              <img src="img/photo-5-mobile.jpg" 
+                srcset="img/img/photo-5-mobile.jpg@2x 2x"
+                   alt="" class="photo-submissions__img">
+            </picture>
             <p class="photo-submissions__autor">Максим <span class="photo-submissions__date">(40 часов назад)</span></p>
             <p class="photo-submissions__comment">Где снег-то?</p>
             <div class="photo-submissions__like"><p>Нравится: 150</p><a class="photo-submissions__like-heart" href="#"></a></div>
           </article>
           <article class="photo-submissions-unit">
-            <img src="http://placehold.it/280x180/ffa7a7" alt="" class="photo-submissions__img">
+            <picture>
+              <source media="(min-width: 1200px)" 
+                srcset="img/photo-6-desktop.jpg 1x,
+                        img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" 
+                srcset="img/photo-6-tablet.jpg 1x,
+                        img/photo-6-tablet@2x.jpg 2x">
+              <img src="img/photo-6-mobile.jpg" 
+                srcset="img/img/photo-6-mobile.jpg@2x 2x"
+                   alt="" class="photo-submissions__img">
+            </picture>
             <p class="photo-submissions__autor">Надежда <span class="photo-submissions__date">(45 часов назад)</span></p>
             <p class="photo-submissions__comment">Всем GM и взаимные лайки!</p>
             <div class="photo-submissions__like"><p>Нравится: 2560</p><a class="photo-submissions__like-heart" href="#"></a></div>
@@ -83,7 +164,17 @@
         <form action="echo" method="post">
           <div class="submit-photo__flex-wrapper">
             <div class="submit-photo__upload">
-              <img src="http://placehold.it/280x374/ffa7a7" alt="Ваше фото">
+              <picture>
+                <source media="(min-width: 1200px)" 
+                  srcset="img/photo-7-desktop.jpg 1x,
+                          img/photo-7-desktop@2x.jpg 2x">
+                <source media="(min-width: 700px)" 
+                  srcset="img/photo-7-tablet.jpg 1x,
+                          img/photo-7-tablet@2x.jpg 2x">
+                <img src="img/photo-7-mobile.jpg" 
+                  srcset="img/img/photo-7-mobile.jpg@2x 2x"
+                     alt="">
+              </picture>
             </div>
             <div class="submit-photo__tools-list">
               <div class="submit-photo__tool submit-photo__tool--active submit-photo__tool--crop">
@@ -117,7 +208,7 @@
       </ul>
       <div class="main-footer__copyright">
         <p>Разработано</p>
-        <a href="htmlacademy.ru"><img src="/img/logo-htmlacademy.svg" alt=""></a>
+        <a href="htmlacademy.ru"><img class="main-footer__acedemy-logo" src="/img/logo-htmlacademy.svg" alt=""></a>
       </div>
     </footer>
   </body>

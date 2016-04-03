@@ -10,8 +10,19 @@
     
     <header class="main-header">
       <div class="main-header__top-menu main-header__top-menu--opene"><!--add "d" for opened-->
-        <a href="#" class="main-header__logo"><img src="/img/logo-pink-white-mobile.svg" alt="PINK"></a>
-        <a href="#" class="main-header__menu-btn"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
+        <a href="#" class="main-header__logo">
+          <picture>
+            <source
+              media="(min-width: 1200px)" srcset="/img/logo-pink-white-desktop.svg">
+            <source
+              media="(min-width: 700px)" srcset="/img/logo-pink-white-tablet.svg">
+            <img 
+              src="/img/logo-pink-white-mobile.svg" alt="PINK">
+          </picture>
+        </a>
+        <a href="#" class="main-header__menu-btn main-header__menu-btn--active"><img src="/img/icon-menu-burger.svg" alt="Menu"></a>
+        <a href="#" class="main-header__menu-btn "><img src="/img/icon-menu-cross.svg" alt="Menu"></a>
+        <!--add class "main-header__menu-btn--active" to show a required state of btn-->
         <div class="main-menu main-menu--opene"><!--add "d" for opened-->
           <ul class="main-menu__list">
             <li><a href="#">Главная</a></li>
@@ -144,7 +155,7 @@
       </ul>
       <div class="main-footer__copyright">
         <p>Разработано</p>
-        <a href="htmlacademy.ru"><img src="/img/logo-htmlacademy.svg" alt=""></a>
+        <a href="htmlacademy.ru"><img class="main-footer__acedemy-logo" src="/img/logo-htmlacademy.svg" alt=""></a>
       </div>
     </footer>
   </body>

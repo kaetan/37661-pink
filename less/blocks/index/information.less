@@ -7,21 +7,17 @@
 .information__header {
   position: relative;
   padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   
   background-color: #ffffff;
 }
 .information__header h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
   
   font-size: 24px;
   line-height: 30px;
   .open-sans-light;
-}
-.information__header h2:last-of-type {
-  margin-bottom: 0px;
 }
  .information__image {
   display: none;
@@ -50,7 +46,13 @@
   margin-bottom: 0px;
 }
 
+
+
 @media @tablet-widths {
+  .information__header {
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
   .information__header h2 {
     font-size: 40px;
     line-height: 48px;
@@ -60,7 +62,7 @@
   }
   .information {
     position: relative;
-    padding-bottom: 45px;
+    padding-bottom: 20px;
     background: url("/img/iphone-screen-tablet-3@1x.png") left 40px bottom no-repeat;
     background-color: #f2f2f2;
   }
@@ -69,16 +71,20 @@
     padding-left: 350px;
     padding-top: 76px;
   }
+  .information__feature p {
+    margin-bottom: 36px;
+  }
 }
 
 
 @media @desktop-widths {
   .information {
     box-sizing: border-box;
+    padding-bottom: 35px;
     
   }
   .information__header {
-    padding-top: 80px;
+    padding-top: 65px;
     padding-bottom: 80px;
   }
   .information__header h2 {
@@ -90,7 +96,7 @@
   }
   .information {
     position: relative;
-    padding-bottom: 45px;
+    padding-bottom: 0;
     background: none;
     background-color: #f2f2f2;
   }
@@ -110,12 +116,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 0;
     padding-left: 130px;
     padding-right: 130px;
   }
   .information__feature {
-    margin-top: 30px;
+    margin-top: 55px;
     width: 30%;
   }
   .information__feature h3 {
@@ -123,6 +129,7 @@
     line-height: 30px;
   }
   .information__feature p {
+    margin-top: 20px;
     font-size: 18px;
     line-height: 30px;
   }
