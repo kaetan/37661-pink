@@ -1,4 +1,6 @@
 .submit-photo {
+  margin-bottom: 0;
+  padding-top: 20px;
   padding-bottom: 29px;
   background-color: #f2f2f2;
 }
@@ -10,19 +12,26 @@
   width: 280px;
   margin: 0 auto;
 }
+.submit-photo__upload {
+  margin-bottom: 30px;
+}
 .submit-photo__tools-list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
   width: 280px;
-  vertical-align: middle;
   font-size: 0;
 }
 .submit-photo__tool {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-right: 34px;
+}
+.submit-photo__tool:last-child {
+  margin-right: 0;
 }
 .submit-photo__tool-range {
   box-sizing: border-box;
@@ -48,7 +57,7 @@
 @media @mobile-widths-only {
   .submit-photo__tool--active .submit-photo__tool-range{
     position: absolute;
-    top: 80px;
+    top: 85px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -61,8 +70,7 @@
   width: 240px;
 }
 .submit-photo__tool a {
-  display: inline-block;
-  margin-right: 20px;
+  display: block;
 }
 .submit-photo__tool:last-child a {
   margin-right: 0;
@@ -70,11 +78,26 @@
 .submit-photo__tool img {
   display: block;
 }
+.submit-photo__final-buttons {
+  position: relative;
+  margin-top: 21px;
+}
+.submit-photo__final-buttons::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  top: -38px;
+  left: -20px;;
+  border-bottom: 1px solid #dddfe0;
+}
+
 .submit-photo__btn {
   width: 280px;
   margin-bottom: 12px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   .open-sans-bold;
   font-size: 18px;
   line-height: 18px;
@@ -97,6 +120,7 @@
 @media @tablet-widths {
   .submit-photo {
     padding-top: 57px;
+    padding-bottom: 53px;
   }
   .submit-photo__flex-wrapper {
     flex-direction: column;
@@ -114,28 +138,51 @@
     flex-direction: column;
     margin: 0;
     margin-top: 10px;
+    padding-bottom: 0;
     width: 275px;
   }
   .submit-photo__tool {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 27px;
+    margin-right: 0;
+    padding-left: 5px;
+    margin-bottom: 25px;
     padding-bottom: 24px;
     padding-right: 18px;
     border-bottom: 1px solid #dddfe0;
   }
-  .submit-photo__tool img {
+  .submit-photo__tool--brightness {
+    padding-left: 10px;
+  }
+  .submit-photo__tool--crop img {
     width: 22px;
     height: 22px;
+  }
+  .submit-photo__tool--filter img {
+    width: 24px;
+    height: 22px;
+  }
+  .submit-photo__tool--brightness img {
+    width: 16px;
+    height: 16px;
   }
   .submit-photo__tool-range {
     width: 202px;
   }
   .submit-photo__final-buttons {
+    width: 280px;
     margin: 0;
     display: flex;
     flex-direction: column;
+  }
+  .submit-photo__final-buttons::before {
+    display: none;
+  }
+  .submit-photo__btn {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 260px;
   }
   .submit-photo__btn--reset {
     margin-bottom: 0;
@@ -146,25 +193,53 @@
 @media @desktop-widths {
   .submit-photo {
     box-sizing: border-box;
-    padding-left: 60px;
-    padding-right: 60px;
-    width: 940px;
     margin: 0 auto;
+    margin-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 56px;
+    width: 940px;
   }
   .submit-photo__upload {
   }
   .submit-photo__flex-wrapper {
+    
     width: 100%;
+  }
+  .submit-photo__tools-list {
+    margin-top: 0;
   }
   .submit-photo__tool {
     padding: 0;
     margin: 0;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-bottom: 12px;
   }
-  .submit-photo__tool img {
-    width: 45px;
-    height: 45px;
+  .submit-photo__tool:first-child {
+    padding-top: 0;
+  }
+  .submit-photo__tool--crop {
+    padding-bottom: 11px;
+  }
+  .submit-photo__tool--filter {
+    padding-bottom: 12px;
+  }
+  .submit-photo__tool--brightness {
+    padding-left: 7px;
+    padding-bottom: 20px;
+  }
+  .submit-photo__tool--crop img {
+    width: 44px;
+    height: 44px;
+  }
+  .submit-photo__tool--filter img {
+    width: 48px;
+    height: 43px;
+  }
+  .submit-photo__tool--brightness img {
+    width: 32px;
+    height: 32px;
   }
   .submit-photo__tools-list {
     width: 410px;

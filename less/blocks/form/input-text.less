@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 33px;
+  padding-bottom: 43px;
   padding-top: 14px;
 }
 .input-text__title {
@@ -33,8 +33,8 @@
   box-sizing: border-box;
   flex-basis: 100%;
   .m-p-zero;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 22px;
   .open-sans-normal;
   font-size: 18px;
@@ -66,26 +66,24 @@
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 0;
-  }
-  .input-text {
     margin-bottom: 50px;
     border: 2px solid #e5e5e5;
   }
   .input-text--first {
     padding-left: 0px;
     padding-right: 0px;
+    margin-bottom: 14px;
   }
   .input-text--no-border {
-    margin-bottom: 0;
     border: none;
   }
   .input-text__title {
     display: block;
     margin: 0;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 35px;
+    padding-left: 35px;
     background: #ffffff;
-    transform: translateY(-24px);
+    transform: translateY(-35px);
   }
   .input-text__title br {
     display: none;
@@ -103,9 +101,19 @@
     .mp-zero;
     margin-right: 20px;
   }
+  .input-text__unit span {
+      display: none;
+  }
   .input-text--second {
+    padding-top: 25px;
+    margin-bottom: 65px;
+    
+    .input-text__units-group {
+      width: 100%;
+    }
     .input-text__unit {
       flex-direction: column-reverse;
+      width: 100%;
       .mp-zero;
     }
     .input-text__unit input {
@@ -113,7 +121,36 @@
       margin-bottom: 10px;
     }
     .input-text__unit label {
+      margin-left: 15px;
       margin-bottom: 30px;
+    }
+    .input-text__unit:last-child label {
+      margin-left: 15px;
+      margin-bottom: 25px;
+    }
+    input {
+      position: relative;
+    }
+    input[name="phone-number"]::after {
+      z-index: 10;
+      display: block;
+      position: absolute;
+      content: "";
+      top: 20px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      background: url("../img/icon-phone.svg") center no-repeat;
+    }
+    input[name="email"]::after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 23px;
+      right: 21px;
+      width: 18px;
+      height: 13px;
+      background: url("../img/icon-mail.svg") center no-repeat;
     }
   }
 }
@@ -127,6 +164,29 @@
     flex-basis: 435px;
   }
   .input-text--second {
+    flex-direction: column;
     flex-basis: 100%;
+    
+    .input-text__units-group {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .input-text__unit {
+      flex-basis: 375px;
+    }
+    .input-text__unit input {
+    }
+    .input-text__unit label {
+      margin-left: 0px;
+      margin-bottom: 10px;
+      padding-left: 19px;
+    }
+    .input-text__unit:last-child label {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
   }
 }
