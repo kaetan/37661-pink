@@ -5,7 +5,7 @@
   align-items: center;
   
 }
-.input-textarea h3 {
+.input-textarea__title {
   text-align: center;
   margin-bottom: 39px;
   margin-top: 36px;
@@ -33,4 +33,40 @@
   line-height: 30px;
   color: #283645;
   border: 2px solid #e5e5e5;
+}
+
+
+@media @tablet-widths {
+  .input-textarea {
+    margin-bottom: 50px;
+    padding-left: 60px;
+    padding-top: 45px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    border: 2px solid #e5e5e5;
+  }
+  .input-textarea__title {
+    margin: 0;
+    padding-right: 32px;
+    padding-left: 32px;
+    background: #ffffff;
+    transform: translateY(-56px);
+  }
+  .input-textarea__title br {
+    display: none;
+  }
+  .input-textarea__unit {
+    width: 100%;
+  }
+  .input-textarea textarea {
+    margin: 0;
+  }
+}
+
+
+@media @desktop-widths {
+  .input-textarea {
+    box-sizing: border-box;
+    flex-basis: 100%;
+  }
 }

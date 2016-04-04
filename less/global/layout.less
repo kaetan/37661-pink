@@ -1,4 +1,5 @@
 @mobile-widths-only: ~"(max-width: 699px)";
+@mobile-tablet-widths: ~"(max-width: 1199px)";
 @tablet-widths: ~"(min-width: 700px)";
 @desktop-widths: ~"(min-width: 1200px)";
 
@@ -34,16 +35,32 @@ label{
   margin: 0 auto;
   
   @media @tablet-widths {
-    width: 620px;
+    width: 700px;
   }
   @media @desktop-widths {
-    width: 940px;
+    width: 1200px;
   }
 }
+
 .m-p-zero {
+  margin: 0;
+  padding: 0;
+}
+.mp-zero {
   margin: 0;
   padding: 0;
 }
 main {
   .container;
+  overflow: hidden;
+}
+.tablet-desktop-wrapper {
+  margin: 0 auto;
+  
+  @media @tablet-widths {
+    width: 620px;
+  }
+  @media @desktop-widths {
+    width: 940px;
+  }
 }

@@ -1,27 +1,157 @@
 .main-header {
   .container;
+  .clearfix;
   position: relative;
+  box-sizing: border-box;
+  padding-top: 59px;
+  min-height: 237px;
+  background: url(/img/bg-back-mobile.jpg) center top no-repeat;
+  background-color: #1d2631;
+}
+.main-header--index-only {
+  min-height: 729px;
+  background: url(/img/iphone-hand-mobile.png) left bottom 270px no-repeat,
+              url(/img/bg-back-mobile.jpg) center bottom 270px no-repeat;
+  background-color: #1d2631;
 }
 .main-header__top-menu {
-  width: 100%;
   position: absolute;
-  top: 4px;
+  top: 0;
+  width: 100%;
   z-index: 10;
   min-height: 66px;
   background-color: rgba(0,0,0,.3);
 }
-.main-header__top-menu--opened {
-  min-height: 69px;
-  background-color: #283645;
-  border-bottom: 1px solid #000001;
+@media @mobile-tablet-widths {
+  .main-header__top-menu--opened {
+    position: absolute;
+    top: 0;
+    min-height: 69px;
+    background-color: #283645;
+    border-bottom: 1px solid #000001;
+  }
 }
+
 .main-header__logo {
   float: left;
   margin-top: 21px;
-  margin-left: 20px;;
+  margin-left: 20px;
 }
 .main-header__menu-btn {
+  display: none;
   float: right;
   margin-top: 21px;
   margin-right: 20px;
+}
+.main-header__menu-btn--active {
+  display: block;
+}
+
+
+.main-header__page-title {
+  position: relative;
+  padding-top: 31px;
+  color: #ffffff;
+}
+.main-header__page-title h1 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  .open-sans-light;
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .main-header {
+    background:  url("/img/bg-back-mobile@2x.jpg") center top no-repeat;
+  }
+  .main-header--index-only {
+    background: url("/img/iphone-hand-mobile@2x.png") center bottom no-repeat,
+                url("/img/bg-back-mobile@2x.jpg") center top no-repeat;
+    }
+}
+
+
+
+@media @tablet-widths {
+  .main-header {
+    min-height: 440px;
+    padding-top: 110px;
+    background: url("/img/bg-back-tablet@1x.jpg") center top no-repeat;
+  }
+  .main-header--index-only {
+    height: 729px;
+    background: url("/img/iphone-hand-tablet@1x.png") center bottom no-repeat,
+                url("/img/bg-back-tablet@1x.jpg") center top no-repeat;
+  }
+  .main-header__logo {
+    margin-top: 28px;
+    margin-left: 39px;
+  }
+  .main-header__menu-btn {
+    margin-top: 43px;
+    margin-right: 41px;
+  }
+  .main-header--index-only {
+    min-height: 0;
+  }
+  .main-header__top-menu {
+    min-height: 110px;
+  }
+  .main-header__top-menu--opened {
+    min-height: 110px;
+  }
+  .main-header__page-title {
+    padding-top: 70px;
+    padding-bottom: 0px;
+  }
+  .main-header__page-title h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .main-header {
+      background:  url("/img/bg-back-tablet@2x.jpg") center top no-repeat;
+    }
+    .main-header--index-only {
+       background: url("/img/iphone-hand-tablet@2x.png") center bottom no-repeat,
+                   url("/img/bg-back-tablet@2x.jpg") center top no-repeat;
+      }
+  }
+}
+
+@media @desktop-widths {
+  .main-header {
+    min-height: 394px;
+    background: url("/img/bg-back-desktop.jpg") center top no-repeat;
+  }
+  .main-header--index-only {
+    min-height: 853px;
+    background: url("/img/iphone-hand-desktop@1x.png") 150px bottom no-repeat,
+                url("/img/bg-back-desktop.jpg") center top no-repeat;
+  }
+  .main-header__top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 130px;
+    padding-right: 130px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .main-header__logo {
+    .mp-zero;
+    float: none;
+    
+  }
+  .main-header__menu-btn {
+    display: none;
+  }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .main-header {
+      background:  url("/img/bg-back-desktop.jpg") center top no-repeat;
+    }
+    .main-header--index-only {
+      background: url("/img/iphone-hand-desktop@2x.png") center bottom no-repeat,
+                  url("/img/bg-back-desktop.jpg") center top no-repeat;
+      }
+  }
 }

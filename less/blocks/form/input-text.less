@@ -6,6 +6,17 @@
   padding-bottom: 33px;
   padding-top: 14px;
 }
+.input-text__title {
+  display: none;
+  text-align: center;
+  margin-bottom: 43px;
+  margin-top: 36px;
+  .open-sans-normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+}
 .input-text--pbot54 {
   padding-bottom: 54px;
 }
@@ -19,7 +30,7 @@
   justify-content: flex-start;
 }
 .input-text__unit input {
-  width: 100%;
+  box-sizing: border-box;
   flex-basis: 100%;
   .m-p-zero;
   padding-top: 20px;
@@ -46,3 +57,76 @@
 ::-moz-placeholder          { .open-sans-normal; font-size: 18px; line-height: 30px; color:#283645; }
 :-moz-placeholder           { .open-sans-normal; font-size: 18px; line-height: 30px; color:#283645; }
 :-ms-input-placeholder      { .open-sans-normal; font-size: 18px; line-height: 30px; color:#283645; }
+
+
+@media @tablet-widths {
+  .input-text {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+  }
+  .input-text {
+    margin-bottom: 50px;
+    border: 2px solid #e5e5e5;
+  }
+  .input-text--first {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .input-text--no-border {
+    margin-bottom: 0;
+    border: none;
+  }
+  .input-text__title {
+    display: block;
+    margin: 0;
+    padding-right: 32px;
+    padding-left: 32px;
+    background: #ffffff;
+    transform: translateY(-24px);
+  }
+  .input-text__title br {
+    display: none;
+  }
+  .input-text__unit {
+    align-items: baseline;
+    flex-basis: 100%;
+    margin-bottom: 52px;
+  }
+  .input-text__unit input {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+  .input-text__unit label {
+    .mp-zero;
+    margin-right: 20px;
+  }
+  .input-text--second {
+    .input-text__unit {
+      flex-direction: column-reverse;
+      .mp-zero;
+    }
+    .input-text__unit input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .input-text__unit label {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+@media @desktop-widths {
+  .input-text {
+    box-sizing: border-box;
+  }
+  .input-text--first {
+    flex-basis: 435px;
+  }
+  .input-text--second {
+    flex-basis: 100%;
+  }
+}
