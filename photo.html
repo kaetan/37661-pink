@@ -24,19 +24,19 @@
         <!--add class "main-header__menu-btn--active" to show a required state of btn-->
         <div class="main-menu main-menu--opene"><!--add "d" for opened-->
           <ul class="main-menu__list">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Фотографии</a></li>
-            <li><a href="#">Конкурс</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="photo.html">Фотографии</a></li>
+            <li><a href="form.html">Конкурс</a></li>
             <li><a href="#">HTML Academy</a></li>
           </ul>
         </div>
       </div>
-      <div class="main-header__page-title">
+      <div class="main-header__page-title page-wrapper">
         <h1>Фотографии<br> пользователей</h1>
       </div>
     </header>
     <main class="container">
-      <section class="photos">
+      <section class="photos page-wrapper">
         <div class="photos__page-description">
           <p>Взгляните на фотографии, которые<br> выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
         </div>
@@ -160,8 +160,8 @@
           <p>Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section><!-- END OF PHOTOS -->
-      <section class="submit-photo">
-        <form action="echo" method="post">
+      <section class="submit-photo page-wrapper">
+        <form action="echo" method="post" class="">
           <div class="submit-photo__flex-wrapper">
             <div class="submit-photo__upload">
               <picture>
@@ -194,7 +194,6 @@
               <input class="submit-photo__btn submit-photo__btn--submit" type="submit" value="Запостить">
               <input class="submit-photo__btn submit-photo__btn--reset" type="reset" value="Отмена">
             </div>
-            
           </div>
         </form>
       </section><!-- END OF SUBMIT-PHOTO -->

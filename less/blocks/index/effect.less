@@ -4,22 +4,31 @@
 
 @media @tablet-widths {
   .effect {
+    display: block;
+  }
+  .effect .page-wrapper {
     display: flex;
     justify-content: space-between;
     min-height: 335px;
+    margin-bottom: 35px;
     padding-left: 40px;
-    padding-top: 90px;
+    padding-top: 55px;
     padding-right: 40px;
     text-align: left;
   }
   .effect__timer {
-    margin-right: 86px;
+    margin-right: 56px;
+    padding-left: 18px;
+    padding-top: 55px;
+    padding-right: 30px;
+    background-image: url('../img/icon-timer.svg');
+    background-size: 240px 277px;
+    background-repeat: no-repeat;
+    background-position: left top;
   }
   .effect__timer span {
     box-sizing: border-box;
     display: block;
-    margin-left: 19px;
-    margin-top: 23px;
     width: 204px;
     height: 204px;
     .open-sans-bold;
@@ -29,8 +38,10 @@
     color: #d22856;
     border: 14px solid #d22856;
     border-radius: 50%;
+    background-color: white;
   }
   .effect__title {
+    margin-top: 35px;
     .open-sans-bold;
     font-size: 30px;
     line-height: 36px;
@@ -52,18 +63,25 @@
 
 @media @desktop-widths {
   .effect {
-    display: flex;
+    background-color: #f2f2f2;
+  }
+  .effect .page-wrapper  {
     justify-content: space-between;
     align-items: flex-start;
     box-sizing: border-box;
     padding-left: 130px;
-    padding-top: 75px;
+    padding-top: 10px;
     padding-right: 130px;
-    padding-bottom: 94px;
-    background-color: #f2f2f2;
+    padding-bottom: 64px;
   }
   .effect__timer {
-    margin-right: 95px;
+    margin-right: 60px;
+    padding-left: 23px;
+    padding-top: 69px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background-size: 299px 345px;
+    background-position: left top;
   }
   .effect__timer span {
     width: 253px;
@@ -73,7 +91,7 @@
     border: 17px solid #d22856;
   }
   .effect__title {
-    margin-top: 50px;
+    margin-top: 95px;
     margin-bottom: 25px;
     font-size: 30px;
     line-height: 30px;
