@@ -28,13 +28,20 @@
   color: #d22856;
 }
 .contacts__map {
+  z-index: 1;
+  position: relative;
   overflow: hidden;
   height: 200px;
   margin-top: 33px;
-  background: url("/img/bg-map.png") center bottom no-repeat;
+  background: url("../img/bg-map.png") center bottom no-repeat;
+}
+.contacts__triangle-bg {
+  z-index: 20;
+  background: url("../img/bg-triangle-white-footer.svg") center bottom -50px no-repeat;
+  background-size: 100%;
 }
 .contacts__map iframe {
-  width: 320px;
+  width: 100%;
   height: 200px;
 }
 
@@ -63,8 +70,11 @@
   .contacts__element:first-of-type p {
     margin-top: 0;
   }
+  .contacts__triangle-bg {
+    padding-bottom: 20px;
+  }
   .contacts__map {
-    margin-top: 20px;
+    margin-top: 0px;
     height: 378px;
   }
   .contacts__map iframe {
@@ -110,8 +120,10 @@
   .contacts__element {
     margin: 0;
   }
+  .contacts__triangle-bg {
+    padding-bottom: 15px;
+  }
   .contacts__map {
-    margin-top: 15px;
     height: 502px;
   }
 }

@@ -1,6 +1,6 @@
 .information {
   position: relative;
-  background: url(/img/iphone-screen-mobile.png) center bottom -6% no-repeat;
+  background: url(../img/iphone-screen-mobile.png) center bottom -6% no-repeat;
   background-color: #f2f2f2;
   padding-bottom: 319px;
 }
@@ -8,7 +8,6 @@
   position: relative;
   padding-top: 39px;
   padding-bottom: 30px;
-  
   background-color: #ffffff;
 }
 .information__header h2 {
@@ -24,6 +23,7 @@
 }
 .information__features-list {
   padding-top: 81px;
+  
 }
 .information__feature h3 {
   .m-p-zero;
@@ -62,14 +62,16 @@
   }
   .information {
     position: relative;
-    padding-bottom: 20px;
-    background: url("/img/iphone-screen-tablet-3@1x.png") left 40px bottom no-repeat;
-    background-color: #f2f2f2;
+    padding-bottom: 0;
+    background-image: none;
   }
   .information__features-list {
+    box-sizing: border-box;
     text-align: left;
     padding-left: 350px;
     padding-top: 76px;
+    padding-bottom: 20px;
+    background: url("../img/iphone-screen-tablet-3@1x.png") left bottom no-repeat;
   }
   .information__feature p {
     margin-bottom: 36px;
@@ -119,6 +121,7 @@
     padding-top: 0;
     padding-left: 130px;
     padding-right: 130px;
+    background-image: none;
   }
   .information__feature {
     margin-top: 55px;

@@ -1,4 +1,5 @@
 .competition {
+  margin-bottom: 18px;
 }
 .competition__flex-wrapper {
   display: flex;
@@ -48,7 +49,7 @@
   border-radius: 3px;
 }
 .competition__submit p {
-  margin-top: 30px;
+  margin-top: 33px;
   .open-sans-normal;
   font-size: 14px;
   line-height: 30px;
@@ -64,14 +65,21 @@
 
 
 @media @tablet-widths {
+  .competition {
+    margin-bottom: 0px;
+  }
   .input-text--first {
-    order: -2;
+    order: -3;
   }
    .input-radio {
+    order: -2;
+  }
+  .input-text--second {
     order: -1;
   }
   .competition__page-description {
-    padding-bottom: 20px;
+    padding-bottom: 57px;
+    padding-top: 90px;
   }
   .competition__page-description p {
     width: 500px;
@@ -92,7 +100,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .competition__submit input {
     width: 300px;
@@ -104,6 +112,9 @@
 
 
 @media @desktop-widths {
+  .competition__page-description {
+    padding-bottom: 70px;
+  }
   .competition__page-description p {
     width: 820px;
   }
@@ -116,17 +127,9 @@
     justify-content: space-between;
     box-sizing: border-box;
   }
-  .input-text--first {
-    order: -3;
-  }
-   .input-radio {
-    order: -2;
-  }
-  .input-text--second {
-    order: -1;
-  }
   .competition__submit {
     width: 100%;
+    margin-bottom: 0px;
   }
   .competition__submit span:last-child{
     display: inline;
