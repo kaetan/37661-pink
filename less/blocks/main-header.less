@@ -8,7 +8,6 @@
   box-sizing: border-box;
   padding-top: 59px;
   min-height: 237px;
-  
 }
 .main-header--index-only {
   background: url("../img/bg-back-mobile.jpg") center bottom 270px no-repeat;
@@ -19,7 +18,7 @@
   background: url("../img/iphone-hand-mobile.png") left bottom 270px no-repeat;
 }
 .main-header__top-menu {
-  position: absolute;
+  position: absolute; /* жс должен добавить абсолют*/
   top: 0;
   width: 100%;
   z-index: 10;
@@ -28,7 +27,7 @@
 }
 @media @mobile-tablet-widths {
   .main-header__top-menu--opened {
-    position: absolute;
+    position: absolute; /* жс должен добавить абсолют*/
     top: 0;
     min-height: 69px;
     background-color: #283645;
@@ -71,7 +70,7 @@
     background-color: #1d2631;
   }
   .main-header--index-only .page-wrapper {
-    background: url("../img/iphone-hand-mobile@2x.png") center bottom no-repeat;
+    background: url("../img/iphone-hand-mobile@2x.png") center bottom 270px no-repeat;
   }
 }
 
@@ -173,9 +172,11 @@
       background-color: #1d2631;
     }
     .main-header--index-only {
-      background: url("../img/iphone-hand-desktop@2x.png") center bottom no-repeat,
-                  url("../img/bg-back-desktop.jpg") center top no-repeat;
+      background: url("../img/bg-back-desktop.jpg") center top no-repeat;
       background-color: #1d2631;
+    }
+    .main-header--index-only .page-wrapper {
+      background: url("../img/iphone-hand-desktop@2x.png") 150px bottom no-repeat;
     }
   }
   .main-header__page-title {

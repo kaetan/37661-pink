@@ -112,6 +112,7 @@
       width: 100%;
     }
     .input-text__unit {
+      position: relative;
       flex-direction: column-reverse;
       width: 100%;
       .mp-zero;
@@ -128,10 +129,8 @@
       margin-left: 15px;
       margin-bottom: 25px;
     }
-    input {
-      position: relative;
-    }
-    input[name="phone-number"]::after {
+  }
+  .input-text__unit--phone::after {
       z-index: 10;
       display: block;
       position: absolute;
@@ -142,7 +141,7 @@
       height: 20px;
       background: url("../img/icon-phone.svg") center no-repeat;
     }
-    input[name="email"]::after {
+  .input-text__unit--email::after {
       display: block;
       position: absolute;
       content: "";
@@ -152,7 +151,6 @@
       height: 13px;
       background: url("../img/icon-mail.svg") center no-repeat;
     }
-  }
 }
 
 
