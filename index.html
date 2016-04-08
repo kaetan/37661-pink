@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style-min.css">
     <script>
       // Picture element HTML5 shiv
@@ -12,21 +13,23 @@
   </head>
   <body>
     <header class="main-header main-header--index-only">
-     <div class="main-header__top-menu main-header__top-menu--opene"><!--add "d" for opened-->
-        <a href="#" class="main-header__logo">
-          <picture>
-            <source
-              media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-            <source
-              media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
-            <img 
-              src="img/logo-pink-white-mobile.svg" alt="PINK">
-          </picture>
-        </a>
-        <a href="#" class="main-header__menu-btn main-header__menu-btn--active"><img src="img/icon-menu-burger.svg" alt="Menu"></a>
-        <a href="#" class="main-header__menu-btn "><img src="img/icon-menu-cross.svg" alt="Menu"></a>
-        <!--add class "main-header__menu-btn--active" to show a required state of btn-->
-        <div class="main-menu main-menu--opene"><!--add "d" for opened-->
+      <div class="main-header__top-menu">
+        <div class="main-header__controls main-header__controls--opene main-header__controls--nojs"><!--add "d" for opened--><!--add "s" for nojs-->
+           <a href="#" class="main-header__logo">
+            <picture>
+              <source
+                media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source
+                media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+              <img 
+                src="img/logo-pink-white-mobile.svg" alt="PINK">
+            </picture>
+          </a>
+          <a href="#" class="main-header__menu-btn "><img src="img/icon-menu-burger.svg" width="50" height="25" alt="Menu"></a>
+          <a href="#" class="main-header__menu-btn main-header__menu-btn--active"><img src="img/icon-menu-cross.svg" width="24" height="24" alt="Menu"></a>
+          <!--add class to show a required state of btn-->
+        </div>
+        <div class="main-menu main-menu--opene main-menu--nojs"><!--add "d" for opened--><!--add "s" for nojs-->
           <ul class="main-menu__list">
             <li><a href="index.html">Главная</a></li>
             <li><a href="photo.html">Фотографии</a></li>
@@ -43,9 +46,9 @@
           <article class="download">
             <a href="#" class="download-link">Скачать приложение</a>
             <div class="available-platforms">
-              <a href="#" class="available-platforms__apple"><img src="img/logo-apple.svg" alt="apple"></a>
-              <a href="#" class="available-platforms__android"><img src="img/logo-android.svg" alt="android"></a>
-              <a href="#" class="available-platforms__win"><img src="img/logo-microsoft.svg" alt="windows"></a>
+              <a href="#" class="available-platforms__apple"><img src="img/logo-apple.svg" width="47" height="57" alt="apple"></a>
+              <a href="#" class="available-platforms__android"><img src="img/logo-android.svg" width="43" height="48" alt="android"></a>
+              <a href="#" class="available-platforms__win"><img src="img/logo-microsoft.svg" width="44" height="42" alt="windows"></a>
               <p class="available-platforms__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
             </div>
           </article>
@@ -209,7 +212,7 @@
       </ul>
       <div class="main-footer__copyright">
         <p>Разработано</p>
-        <a href="htmlacademy.ru"><img class="main-footer__acedemy-logo" src="img/logo-htmlacademy.svg" alt=""></a>
+        <a href="htmlacademy.ru"><img class="main-footer__acedemy-logo" src="img/logo-htmlacademy.svg" alt="" width="27" height="35"></a>
       </div>
     </footer>
   </body>
