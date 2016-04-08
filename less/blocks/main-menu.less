@@ -2,15 +2,20 @@
   position: relative;
   display: none;
   z-index: 10;
-  margin-top: 70px;
   width: 100%;
 }
-@media @mobile-tablet-widths {
+
   .main-menu--opened {
     position: absolute;
-    /*top: 4px;*/
+    margin-top: 70px;
     display: block;
   }
+  .main-menu--nojs {
+    position: static;
+    margin-top: 0;
+    display: block;
+  }
+@media @mobile-tablet-widths {
   .main-menu__list {
     list-style: none;
     color: #ffffff;
@@ -34,16 +39,23 @@
   }
 }
 
+
 @media @tablet-widths {
-  .main-menu {
-    margin-top: 111px;
+    .main-menu--opened {
+      margin-top: 111px;
+    }
+    .main-menu--nojs {
+      margin-top: 0px;
+    }
   }
-  .main-menu--opened {
-    top: 0;
-  }
-}
+
+
 
 @media @desktop-widths {
+  .main-menu--opened {
+    position: static;
+      margin-top: 0px;
+    }
   .main-menu {
     .mp-zero;
     margin-top: 10px;
