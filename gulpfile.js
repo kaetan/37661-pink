@@ -57,13 +57,6 @@ gulp.task("style", function() {
     .pipe(server.reload({stream: true}));
 });
 
-// Копирование style-min.css в рабочую папку проекта
-gulp.task("copy-min", function() {
-	gulp.src("build/css/style-min.css")
-      .pipe(copy())
-      .pipe(gulp.dest("./css"));
-});
-
 // Оптимизация изображений
 gulp.task("images", function(){
   return gulp.src("img/**/*.{png,jpg,gif,svg}")
@@ -95,5 +88,5 @@ gulp.task("serve", ["style"], function() {
 
 // Запускаем всё
 gulp.task("build", function(){
-  runSequence("clean", ["copy","style","copy-min","images"]);
+  runSequence("clean", ["copy","style","images"]);
 });
